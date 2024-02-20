@@ -437,8 +437,6 @@ i {
     cursor: pointer;
 }
 
-
-
 /* ............................... */
 /* ............carrito.............*/
 /* ............................... */
@@ -563,7 +561,40 @@ i {
     box-shadow: 0rem 0rem 1rem 0.2rem var(--amarillo);
 }
 
+/* ............................... */
+/* ............producto ...........*/
+/* ............................... */
 
+.contenedor-grande-producto {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.div-descripcion {
+    width: 45%;
+    margin: 1rem;
+}
+
+.producto-titulo-descripcion{
+    margin: 1rem;
+    font-size: xx-large;
+    color: var(--verdeocuro);
+}
+
+.descripcion-titulo {
+    margin: 1rem;
+    font-size: x-large;
+}
+
+.boton-volver {
+    width: 95%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 1rem;
+}
 
 /* ............................... */
 /* ............favoritos...........*/
@@ -634,6 +665,9 @@ footer {
         display: block;
         justify-content: center;
         align-items: center;
+    }
+    .div-descripcion {
+        width: 85%;
     }
 
 }

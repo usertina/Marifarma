@@ -201,10 +201,19 @@ let productos = [
 ];
 
 const contenedorProductos = document.querySelector("#contenedor-productos");
-const botonesCategorias = document.querySelectorAll(".boton-categoria");
-const tituloPrincipal = document.querySelector("#titulo-principal");
+/* const botonesCategorias = document.querySelectorAll(".boton-categoria");
+const tituloPrincipal = document.querySelector("#titulo-principal"); */
 let botonesAgregar = document.querySelectorAll(".producto-agregar");
 const numerito = document.querySelector("#numerito");
+
+const divContenedorGrande = document.createElement("div");
+div.classList.add("contenedor-grande-producto");
+div.innerHTML =`
+<h3 class="producto-titulo" >${producto.nombre}</h3>
+
+
+`
+
 
 function cargarProductos(productosElegidos) {
 
@@ -214,7 +223,6 @@ function cargarProductos(productosElegidos) {
         
         const div = document.createElement("div");
         div.classList.add("producto");
-        div.classList.add("card-product");
         div.innerHTML = `
         <button class="favorite">
         <i class="fa-regular fa-star" id="favorite-regular" class="estrellaVacia"></i>
@@ -236,7 +244,8 @@ function cargarProductos(productosElegidos) {
 
 cargarProductos(productos);
 
-botonesCategorias.forEach(boton => {
+
+/* botonesCategorias.forEach(boton => {
     boton.addEventListener("click", (e) => {
         
         //esto es para quitar el active de los otros
@@ -257,44 +266,4 @@ botonesCategorias.forEach(boton => {
         }
 
     });
-})
-
-function actualizarBotonesAgregar() {
-    botonesAgregar = document.querySelectorAll(".producto-agregar");
-
-    botonesAgregar.forEach(boton => {
-    boton.addEventListener("click", agregarAlCarrito);
-    });
-};
-
-const productosEnCarrito = [];
-
-function agregarAlCarrito(e) {
-
-    const idBoton = e.currentTarget.id;
-    /* console.log(idBoton); */
-
-    const productoAgregado = productos.find(producto => producto.id.toString() === idBoton);
-    /* console.log(productoAgregado); */
-
-    if(productosEnCarrito.some(producto => producto.id.toString() === idBoton)){ //devuelve false si es la primera vez que pulsamos el boton agregar y devuelve true si ya se ha agregado antes el producto al carrito
-        const index = productosEnCarrito.findIndex(producto => producto.id.toString() === idBoton);//esto nos devuelve al segundo click el indice del array(la posicion en la que estña el producto)
-        /* console.log(index); */
-        productosEnCarrito[index].cantidad++;
-
-    }else{
-        productoAgregado.cantidad = 1;
-    productosEnCarrito.push(productoAgregado);
-    }
-//aquí ya nos dice para el array y cada producto, la cantidad que hay de cada uno
-    /* console.log(productosEnCarrito); */
-
-    actualizarNumerito();//actualiza el numero del carrito cada vez que agregamos un producto
-    localStorage.setItem("productos-en-carrito", JSON.stringify(productosEnCarrito));//esto hace que guarde un json con los peroductos que están en el carrito en el local storage
-
-};
-
-function actualizarNumerito() {
-    let nuevoNumerito = productosEnCarrito.reduce((acc, producto) => acc + producto.cantidad, 0);
-    numerito.innerHTML = nuevoNumerito;
-}
+}) */
