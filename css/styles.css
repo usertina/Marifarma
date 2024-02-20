@@ -1,0 +1,694 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Kdam+Thmor+Pro&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400&family=Roboto:wght@300;400;500;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: 'Comfortaa', sans-serif;
+}
+
+:root {
+    --white: white;
+    --black: black;
+    --naranjaoscurillado: #B0A326;
+    --verdemostaza: #8E9E31;
+    --naranja: #E5B50E;
+    --verdeoscurillo: #677709;
+    --verdeocuro: #165f03b3;
+    --verdemedio: #84bd76b3;
+    --verdeclaro: #f1ffeeb3;
+    --verdeclarosintransp: #f1ffee;
+    --colorhuevo: #fef893;
+    --gris: #D9D9D9;
+    --amarillo: #e9cc0f;
+}
+
+/* generales */
+
+h1 {
+    font-size: xxx-large;
+}
+
+p {
+    font-size: large;
+}
+/* ............................... */
+/* ..............header ...........*/
+/* ............................... */
+
+.home {
+    background-color: var(--verdemostaza);
+    padding: 1rem;
+}
+
+a {
+    color: var(--black);
+}
+
+a:visited {
+    color: var(--black);
+}
+
+.divIdiomas {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--amarillo);
+    cursor: pointer;
+}
+
+.idiom:hover {
+    color: var(--colorhuevo);
+    text-shadow: 0rem 0rem 0.5rem var(--naranja);
+    transition: 300ms ease;
+}
+
+.boton-carrito {
+    background-color: transparent;
+    border: none; 
+    cursor: pointer;
+}
+
+.numerito {
+    background-color: var(--amarillo);
+    padding: 0 .25rem;
+    border-radius: 1rem;
+    border: solid 0.1rem var(--amarillo);
+}
+
+.boton-estrella {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.buscar {
+    display: inline;
+}
+
+.buscador {
+    align-items: center;
+    display: inline-block;
+    height: 2.8rem;
+    width: 18rem;
+    border-radius: 0.5rem;
+}
+
+.logo, .logo2 {
+    max-width: 5rem;
+    filter: drop-shadow(0 2px 5px var(--verdeocuro)); 
+}
+
+#boton_ham {
+    display: none;
+}
+
+#label_boton {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 100;
+}
+
+.N:hover {
+    color: var(--naranja);
+}
+.cat {
+    margin: 1rem;
+    font-size: x-large;
+}
+
+h1 {
+    margin-top: 2rem;
+}
+
+#i {
+    margin: 1rem;
+    font-size: xx-large;
+}
+
+i {
+    font-size: x-large;
+
+}
+
+.hamburguesa {
+    display: flex;
+
+}
+
+.topnav {display: none;}
+
+#boton_ham:checked ~ #myTopnav {
+    display: block;
+/*     text-align: left; */
+}
+              
+
+#myTopnav {
+    position: absolute;
+    top: 0rem;
+    right: 0rem;
+    background-color: var(--verdeclarosintransp);
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+#boton_ham:checked ~ #myTopnav a {
+display: block;
+text-align: right;
+}
+
+#boton_ham:checked ~ #myTopnav a:hover {
+    color: var(--naranja);
+
+    }
+
+.topnav a {
+
+    margin: 5rem;
+    font-size: larger;
+    
+}
+
+.fila1, .fila2{
+    grid-column: 1/-1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.fila1 {
+    margin-bottom: 1rem;
+}
+
+.idioma{
+    display: none;
+}
+
+.logo-movil{
+    display: none;
+}
+
+.icono{
+    gap: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* ............................... */
+/* .......pagina principal.........*/
+/* ............................... */
+
+
+.intro{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1rem;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.intro1 {
+    width: 58%;
+}
+
+.introCostado {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.fotointro {
+/*     position: relative; */
+    width: 95%;
+    border-radius: 0.8rem;
+}
+
+.HB:hover {
+    box-shadow: 0rem 0rem 1rem 0.5rem var(--naranja);
+    transform: scale(1.01);
+    transition: 300ms ease;
+}
+
+.fotointroDescuento {
+    width: 95%;
+    border-radius: 0.8rem;
+/*     z-index: -1; */
+}
+
+.descuentoIVA {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+/*     position: relative; */
+}
+
+.descuentoEnvios {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+/*     position: relative; */
+}
+
+.fecha {
+    width: 95%;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    border: solid var(--verdeoscurillo);
+    border-radius: 0.8rem;
+    background-color: var(--naranjaoscurillado);
+    justify-content: center;
+    align-items: center;
+}
+
+#reloj {
+    margin: 1rem;
+    font-size: xx-large;
+}
+
+#calendario {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 1rem;
+    font-size: xx-large;
+}
+
+/* ............................... */
+/* ...........categorias...........*/
+/* ............................... */
+
+.navC {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 1rem;
+}
+
+.wrapper { 
+    display: flex;
+    flex-direction: column;
+}
+
+.categorias {
+    display: flex;
+}
+
+.boton-menu {
+margin: 1rem;
+background-color: transparent;
+border: none; 
+cursor: pointer;
+font-size: x-large;
+padding: 1rem;
+}
+
+.boton-menu:hover {
+    background-color: var(--verdeclaro);
+    padding: 1rem;
+    border-radius: 0.8rem;
+    color: var(--naranja);
+}
+
+.boton-menu.active {
+    background-color: var(--verdeclarosintransp);
+    border-radius: 0.8rem;
+}
+
+i {
+    margin: 0.5rem;
+}
+
+/* .principal-productos {
+    border: solid red;
+} */
+
+.titulo-principal {
+    color: var(--verdeocuro);
+    font-size: xx-large;
+    margin: 2rem;
+}
+
+.contenedor-productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+} 
+
+.producto {
+    display: flex;
+    flex-direction: column;
+    width: 20rem;
+/*     height: 25rem; */
+    margin: 2rem;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0rem 0rem 1rem 0.25rem var(--amarillo);
+    border-radius: 0.8rem;
+    position: relative;
+    transition: 300ms ease;
+}
+
+.producto:hover {
+    background-color: var(--verdeclaro);
+    box-shadow: 0rem 0rem 1rem 0.35rem var(--amarillo);
+}
+
+.producto-imagen {
+    width: 90%;
+    border-radius: 0.8rem;
+    margin: 0.5rem;
+}
+
+.producto-detalles {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+.producto-titulo {
+    font-size: x-large;
+    margin: 0.5rem;
+}
+
+.producto-precio {
+    font-size: x-large;
+    color: var(--verdeocuro);
+}
+
+.producto-agregar {
+    background-color: var(--naranja);
+    border-radius: 0.8rem;
+    color: var(--black);
+    width: 45%;
+    height: 2.5rem;
+    margin: 1rem;
+    cursor: pointer;
+    border: solid 0.15rem var(--verdeoscurillo);
+    transition: 200ms ease;
+}
+
+.producto-agregar:hover {
+    background-color: var(--amarillo);
+    box-shadow: 0rem 0rem 1rem 0.2rem var(--amarillo);
+}
+
+#favorite-regular {
+    color: var(--verdeocuro);
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background-color: transparent;
+    border: none; 
+    cursor: pointer;
+}
+
+#added-favorite {
+    color: var(--verdeocuro);
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background-color: transparent;
+    border: none; 
+    cursor: pointer;
+}
+
+
+
+/* ............................... */
+/* ............carrito.............*/
+/* ............................... */
+
+.carrito-vacio {
+    margin: 1rem;
+    color: var(--naranjaoscurillado);
+    font-size: x-large;
+    display: none;
+}
+
+.contenedor-carrito {
+    border: solid pink;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.8rem;
+    margin: 1rem;
+}
+
+.carrito-producto {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    border-radius: 0.8rem;
+    transition: 200ms ease;
+    box-shadow: 0rem 0rem 1rem 0.2rem var(--amarillo);
+
+}
+
+.carrito-producto:hover {
+    background-color: var(--verdeclaro);
+    box-shadow: 0rem 0rem 1rem 0.35rem var(--amarillo);
+
+}
+
+.carrito-producto-imagen {
+    max-height: 10rem;
+    border-radius: 0.8rem;
+    margin: 0.8rem;
+}
+
+.carrito-producto-titulo,
+.carrito-producto-precio,
+.carrito-producto-subtotal,
+.carruto-producto-cantidad {
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.carrito-producto-eliminar {
+    background-color: transparent;
+    border: none; 
+    cursor: pointer;
+    padding: 0.8rem;
+    transition: 200ms ease;
+}
+
+.fa-trash:hover {
+    color: var(--verdeocuro);
+    box-shadow: 0rem 0rem 1rem 0.2rem var(--amarillo);
+}
+
+.carrito-acciones {
+    display: flex;
+    justify-content: space-between;
+}
+
+.carrito-acciones-vaciar {
+    background-color: var(--naranja);
+    border-radius: 0.8rem;
+    color: var(--black);
+    padding: 1rem;
+    margin: 1rem;
+    cursor: pointer;
+    border: solid 0.15rem var(--verdeoscurillo);
+    transition: 200ms ease;
+    font-size: x-large;
+}
+
+.carrito-acciones-vaciar:hover {
+    background-color: var(--amarillo);
+    box-shadow: 0rem 0rem 1rem 0.2rem var(--amarillo);
+}
+
+.carrito-acciones-derecha {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.carrito-acciones-total{
+    margin: 1rem;
+}
+
+#total {
+    font-size: xx-large;
+    color: var(--naranjaoscurillado);
+    margin: 0.3rem;
+}
+
+.carrito-acciones-comprar {
+    background-color: var(--naranjaoscurillado);
+    border-radius: 0.8rem;
+    color: var(--black);
+    padding: 1rem;
+    margin: 1rem;
+    cursor: pointer;
+    border: solid 0.15rem var(--verdeoscurillo);
+    transition: 200ms ease;
+    font-size: x-large;
+}
+
+.carrito-acciones-comprar:hover {
+    background-color: var(--naranja);
+    box-shadow: 0rem 0rem 1rem 0.2rem var(--amarillo);
+}
+
+
+
+/* ............................... */
+/* ............favoritos...........*/
+/* ............................... */
+
+
+/* ............................... */
+/* ..............footer ...........*/
+/* ............................... */
+
+footer {
+    margin-top: 2rem;
+    background-color: var(--verdemostaza);
+    padding: 2rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.siguenos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.redesTit {
+    font-size: xx-large;
+    margin: 1rem;
+}
+
+.rrss {
+    font-size: xxx-large;
+    margin: 0.3rem;
+}
+
+.derechos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.politicas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ............................... */
+/* ..........media query...........*/
+/* ............................... */
+
+/* NAVEGADOR */
+
+/* TABLET Y MOVIL*/
+
+@media screen and (max-width: 900px) {
+    .derechos{
+        display: none;
+    }
+
+    .politicas{
+        display: none;
+    }
+    .carrito-producto {
+        display: block;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+
+/* ESCRITORIO Y TABLET */
+
+@media screen and (min-width: 700px) {
+    .fila1 {
+        display: none;
+    }
+    .menu-btn{
+        display: none;
+    }
+    .idioma{
+        display: block;
+    }
+
+}
+
+
+/* MOVIL */
+
+@media screen and (max-width: 700px) {
+
+    .categorias{
+        display: none;
+    }
+
+    .logo2 {
+        display: none;
+    }
+
+    .derechos{
+        display: none;
+    }
+
+    .politicas{
+        display: none;
+    }
+
+    .intro1,
+    .introCostado,
+    .fotointroDescuento,
+    .fotointro {
+        width: 100%;
+    }
+
+    .buscador {
+        width: 13rem;
+    }
+
+    .carrito-producto {
+        display: block;
+        justify-content: center;
+        align-items: center;
+    }
+
+}

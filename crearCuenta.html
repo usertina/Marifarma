@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ParaCoders</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Kdam+Thmor+Pro&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400&family=Roboto:wght@300;400;500;900&display=swap');
+      </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <header id="home" class="home">
+
+            <div class="fila1">
+               <div><a href="index.html"><img class="logo" src="/img/logo.paracoders.webp" alt=""></a></div>
+               <h1 class="title">ParaCoders</h1>
+               
+
+                <div class="hamburguesa">
+                    <label id="label_boton" for="boton_ham"> <i id="i" class="fa fa-bars ham"></i></label> 
+                    <input id="boton_ham" type="checkbox" value="si">
+                    
+    
+                    <div class="topnav" id="myTopnav">
+            
+                        <a href="index.html" class="active">Home</a>
+                        <a href="productos.html#medicamentos" class="active" id="navMedicamentosB">Medicamentos</a>
+                        <a href="#cuidado" class="active" id="navCuidadoB">Cuidado natural</a>
+                        <a href="#herbolario" class="active" id="navHerbolarioB">Herbolario</a>
+                        <a href="#ortopedia" class="active" id="navOrtopediaB">Ortopedia</a>
+                    
+                    </div>
+               </div>
+
+            </div>
+            <div  class="fila2">
+                    <div><a href="index.html"><img class="logo2" src="/img/logo.paracoders.webp" alt=""></a></div>
+                   <div class="buscar">
+                    <i class="fa-solid fa-magnifying-glass navegador"></i>
+                    <input class="buscador" type="text" placeholder=" Buscar...">
+                </div>
+                <div class="icono">
+                    <a href="/acceso.html"><i class="fa-solid fa-user navegador"></i></a>
+                    <a href="/carrito.html"><i class="fa-solid fa-cart-shopping navegador"></i></a>
+                    <a href="#"><i class="fa-solid fa-language"></i></a>
+
+                    <!-- foton para favoritos -->
+                    
+                    <button id="button-header-favorite">
+                        <i class="fa-regular fa-star"></i>
+                            <span class="counter-favorite">0</span>
+                    </button>
+                </div>
+            </div>
+            <div class="container-list-favorites">
+                <div class="header-favorite">
+                    <h3>Favoritos</h3>
+                    <i class="fa-solid fa-xmark" id="btn-close"></i>
+                </div>
+                <hr />
+                <div class="list-favorites">
+                    <div class="card-favorite">
+                        <p class="title">Marihuana de la buena</p>
+                        <p>20 €</p>
+                    </div>
+                </div>
+            </div>
+
+    </header>
+
+<section class="categorias">
+    <div class="5 cat">
+        <i class="fa-solid fa-pills"></i>
+        <a href="productos.html#medicamentos" class="N" id="navMedicamentos">Medicamentos</a>
+    </div>
+
+    <div class="6 cat">
+        <i class="fa-solid fa-seedling"></i>
+        <a href="#cuidado" class="N" id="navCuidado">Cuidado natural</a>
+    </div>
+                    
+    <div class="7 cat">
+        <i class="fa-brands fa-pagelines"></i>
+        <a href="#herbolario" class="N" id="navHerbolario">Herbolario</a>
+    </div>
+       
+    <div class="8 cat">
+        <i class="fa-solid fa-person-cane"></i>
+        <a href="#ortopedia" class="N" id="navOrtopedia">Ortopedia</a>
+    </div>
+
+<!-- crear cuenta -->
+
+</section>
+
+
+<section class="sectionCrear">
+    <h1 class="tittle1">Crear Cuenta</h1>
+    <form id="signup-form" action="procesar_registro.php" method="post">
+  
+        <div class="por-personal">
+    <h2 class="h2personal">
+        Información personal
+    </h2>
+    <label for="nombre">Nombre</label>
+  
+    <input type="text" id="input1" class="input-box"required onkeydown="saltar(event, 'input2')">
+
+    <label for="apellido">Apellido</label>
+    <input type="text" id="input2" class="input-box"required onkeydown="saltar(event, 'input3')">
+
+    <label for="email">Correo Electrónico</label>
+    <input type="text" id="input3" class="input-box"required onkeydown="saltar(event, 'input4')">
+
+    <label for="contrasena">Contraseña</label>
+    <input type="text" id="input4" class="input-box"required onkeydown="saltar(event, 'input5')">
+        </div>
+
+        <div class="por-tarjeta">
+
+    <h2 class="h2tarjeta"> 
+        Información de Tarjeta de Banco
+    </h2>
+
+    <label for="numero_tarjeta">Número de Tarjeta</label>
+    <input type="text" id="input5" class="input-box"required onkeydown="saltar(event, 'input6')">
+
+    <label for="nombre_tarjeta">Nombre en la Tarjeta</label>
+    <input type="text" id="input6" class="input-box"required onkeydown="saltar(event, 'input7')">
+
+    <label for="fecha_expiracion">Fecha de Expiración</label>
+    <input type="text" id="input7" class="input-box"required onkeydown="saltar(event, 'input8')">
+
+    <label for="cvv">CVV</label>
+    <input type="text" id="input8" class="input-box"required onkeydown="saltar(event, 'input9')">
+
+    </div>
+
+        <button class="Información" type="submit" value="Enviar">Crear Cuenta</button>   
+    </form>
+</section>
+
+<script src="crearcuenta.js"></script>
+</body>
+</html>
+    

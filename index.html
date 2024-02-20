@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ParaCoders</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <header id="home" class="home">
+
+            <div class="fila1">
+
+               <div><a href="index.html"><img class="logo" src="/img/logo.paracoders.webp" alt=""></a></div>
+               <h1 class="title">ParaCoders</h1>
+               
+
+                <div class="hamburguesa">
+                    <label id="label_boton" for="boton_ham"> <i id="i" class="fa fa-bars ham"></i></label> 
+                    <input id="boton_ham" type="checkbox" value="si">
+                    
+    
+<!--                     <div class="topnav" id="myTopnav">
+            
+                        <a href="index.html" class="active">Home</a>
+                        <a href="productos.html#medicamentos" class="active" id="navMedicamentosB">Medicamentos</a>
+                        <a href="#cuidado" class="active" id="navCuidadoB">Cuidado natural</a>
+                        <a href="#herbolario" class="active" id="navHerbolarioB">Herbolario</a>
+                        <a href="#ortopedia" class="active" id="navOrtopediaB">Ortopedia</a>
+                    
+                    </div> -->
+               </div>
+
+            </div>
+
+            <div  class="fila2">
+                <div class="divIdiomas">
+                    <span class="ES idiom">ES</span>
+                    <span class="EN idiom">EN</span>
+                </div>
+                <div><a href="index.html"><img class="logo2" src="/img/logo.paracoders.webp" alt=""></a></div>
+                   
+                <div class="buscar">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input class="buscador" type="text" placeholder=" Buscar...">
+                </div>
+
+                <div class="icono">
+                    <a href="/acceso.html"><i class="fa-solid fa-user"></i></a>
+
+                    <!-- boton carrito -->
+
+                    <button id="boton-header-carrito" class="boton-carrito active">
+                        <a href="/carrito.html"><i class="fa-solid fa-cart-shopping"></i><span id="numerito" class="numerito">0</span></a>
+                            
+                    </button>
+
+                    <!-- boton para favoritos -->
+                    
+                    <button id="button-header-favorite" class="boton-estrella">
+                        <i class="fa-regular fa-star"></i>
+                            <span class="counter-favorite numerito">0</span>
+                    </button>
+
+                </div>
+
+            </div>
+
+            <!-- el contenedor de favoritos -->
+ <!--            <div class="container-list-favorites">
+                <div class="header-favorite">
+                    <h3>Favoritos</h3>
+                    <i class="fa-solid fa-xmark" id="btn-close"></i>
+                </div> -->
+
+                <!-- la estructura de favoritos -->
+<!--                 <hr />
+                <div class="list-favorites">
+                    <div class="card-favorite">
+                        <p class="title">Marihuana de la buena</p>
+                        <p>20 €</p>
+                    </div>
+                </div>
+            </div> -->
+
+    </header>
+<article class="wrapper">
+
+    <section class="categorias">  <!-- esto sería como el aside -->
+
+
+        <nav class="navC">
+                <button id="todos" class="boton-menu boton-categoria active"><i class="fa-solid fa-swatchbook"></i>Todos los productos</button>
+                <button id="medicamentos" class="boton-menu boton-categoria"><i class="fa-solid fa-pills"></i>Medicamentos</button>
+                <button id="cuidado" class="boton-menu boton-categoria"><i class="fa-solid fa-seedling"></i>Cuidado natural</button>
+                <button id="herbolario" class="boton-menu boton-categoria"><i class="fa-brands fa-pagelines"></i>Herbolario</button>
+                <button id="ortopedia" class="boton-menu boton-categoria"><i class="fa-solid fa-person-cane"></i>Ortopedia</button>
+                <!-- <a class="boton-carrito" href="/carrito.html">Carrito <span class="numerito">0</span></a> -->
+        </nav>
+    <!-- index -->
+
+    </section>
+
+<!-- productos -->
+
+<section class="principal-productos">
+
+<h2 class="titulo-principal" id="titulo-principal">Todos los productos</h2>
+<div class="contenedor-productos" id="contenedor-productos">
+
+
+<!--     <div class="producto">
+        <button class="favorite">
+            <i class="fa-regular fa-star" id="favorite-regular" class="estrellaVacia"></i>
+            <i class="fa-solid fa-star" id="added-favorite" class="estrellaLLena"></i>
+        </button>
+        <img class="producto-imagen" src="img/aceite-cannabis.jpg.webp" alt="">
+        <div class="producto-detalles">
+            <h3 class="producto-titulo">Aceite de cannabis</h3>
+            <p class="producto-precio">15,61 €</p>
+            <div class="producto-puntuacion"><i id="cannabito" class="fa-solid fa-cannabis"></i><i id="cannabito" class="fa-solid fa-cannabis"></i><i id="cannabito" class="fa-solid fa-cannabis"></i><i id="cannabito" class="fa-solid fa-cannabis"></i><i id="cannabito" class="fa-solid fa-cannabis"></i></div>
+            <button class="producto-agregar" id="añadir">Añadir</button>
+        </div>
+
+        
+    </div> -->
+
+
+</div>
+
+</section>
+
+
+</article>
+
+<section class="intro">
+
+    <div class="intro1">
+        <img class="fotointro HB" src="img/homees.png" alt="">
+    </div>
+    <div class="introCostado">
+<!--         <div class="fecha HB">
+            <div id="calendario"></div>
+            <div id="reloj"></div>
+            <script src="/js/fecha.js"></script>
+        </div> -->
+        <div class="descuentoIVA">
+            <img class="fotointroDescuento HB" src="img/descuentoes1.png" alt="">
+        </div>
+        <div class="descuentoEnvios">
+            <img class="fotointroDescuento HB" src="img/descuentoes2.png" alt="">
+        </div>
+    </div>
+
+
+</section>
+
+<footer>
+    <div class="siguenos">
+        <h2 class="redesTit">Síguenos</h2>
+        <div class="RRSS">
+            <a href="#"><i class="fa-brands rrss fa-square-facebook"></i></a>
+            <a href="#"><i class="fa-brands rrss fa-square-instagram"></i></a>
+            <a href="#"><i class="fa-brands rrss fa-square-google-plus"></i></a>
+            <a href="#"><i class="fa-brands rrss fa-square-youtube"></i></a>
+
+
+        </div>
+    </div>
+    <div class="derechos">
+        <p>© 2024 ParaCoders SL.</p>
+        <p>Todos los derechos reservados.</p>
+        <p>Todos los productos incluyen IVA.</p>
+    </div>
+    <div class="politicas">
+        <a href="#"><p>Política de Privacidad</p></a>
+        <a href="#"><p>Condiciones de Uso</p></a>
+        <a href="#"><p>Condiciones de Contratación</p></a>
+        <a href="#"><p>Política de Cookies</p></a>
+    </div>
+</footer>
+<script src="/js/productos.js"></script>
+</body>
+</html>
