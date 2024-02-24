@@ -18,8 +18,21 @@
                
 
                 <div class="hamburguesa">
-                    <label id="label_boton" for="boton_ham"> <i id="i" class="fa fa-bars ham"></i></label> 
-                    <input id="boton_ham" type="checkbox" value="si">
+                    <button id="abrir" class="abrir-menu"> <i class="fa fa-bars"></i></button> 
+                    <!-- <input id="boton_ham" type="checkbox" value="si"> -->
+
+                    <nav class="nav" id="nav">
+                        <button class="cerrar-menu" id="cerrar"><i class="fa-solid fa-xmark"></i></button>
+                        <ul class="nav-list">
+                            <li class="items-lista-hamburguesa"> Productos </li>
+                            <li class="items-lista-hamburguesa"> Medicamentos </li>
+                            <li class="items-lista-hamburguesa"> Cuidado natural </li>
+                            <li class="items-lista-hamburguesa"> Herbolario </li>
+                            <li class="items-lista-hamburguesa"> Ortopedia </li>
+                            <li class="items-lista-hamburguesa"> Contacto </li>
+                        </ul>
+                    </nav>
+
                     
     
 <!--                     <div class="topnav" id="myTopnav">
@@ -183,5 +196,6 @@
 </footer>
 <script src="/js/productos.js"></script>
 <script src="/js/favoritos.js"></script>
+<script src="/js/navbar.js"></script>
 </body>
 </html>
