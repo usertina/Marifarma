@@ -131,13 +131,16 @@ i {
     margin: 1.3rem;
     font-size: xx-large;
     cursor: pointer;
+    color: var(--black);
+    background-color: transparent;
+    border: none;
 }
 
 .nav-list {
     list-style-type: none;
     display: flex;
     flex-direction: column;
-    color: var(--verdemedio);
+    color: var(--b);
     margin: 0rem 2rem;
 }
 
@@ -150,7 +153,7 @@ i {
 }
 
 .items-lista-hamburguesa:hover {
-    color: var(--naranjaoscurillado);
+    color: var(--verdeocuro);
 }
   
   .abrir-menu,
@@ -731,7 +734,7 @@ footer {
         top: 0;
         right: 0;
         bottom: 0;
-        background-color: #1c1c1c;
+        background-color: var(--verdemostaza);
         padding: 1.9rem 1.5rem;
 /*         box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5); */
 

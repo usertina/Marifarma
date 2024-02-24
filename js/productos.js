@@ -3,7 +3,8 @@ let productos = [
         id: 1,
         categoria: {
             nombre:"Medicamentos",
-            id:"medicamentos"},
+            id:"medicamentos",
+            id2:"Ham-medicamentos"},
         nombre: 'Aceite de cannabis CBD 25%',
         precio: 15.61,
         imagen: "/img/27.png",
@@ -14,7 +15,8 @@ let productos = [
         id: 2,
         categoria: {
             nombre:"Herbolario",
-            id:"herbolario"},
+            id:"herbolario",
+            id2:"Ham-herbolario"},
         nombre: 'AMNESIA CBD BOOST',
         precio: 10.75,
         imagen: "/img/8.png",
@@ -25,7 +27,8 @@ let productos = [
         id: 3,
         categoria: {
             nombre:"Medicamentos",
-            id:"medicamentos"},
+            id:"medicamentos",
+            id2:"Ham-medicamentos"},
         nombre: 'WELCOME WINTER KIT',
         precio: 50.00,
         imagen: "/img/1.png",
@@ -36,7 +39,8 @@ let productos = [
         id: 4,
         categoria: {
             nombre:"Medicamentos",
-            id:"medicamentos"},
+            id:"medicamentos",
+            id2:"Ham-medicamentos"},
         nombre: 'SHATTER CBD LEMON',
         precio: 4.50,
         imagen: "/img/3.png",
@@ -47,7 +51,8 @@ let productos = [
         id: 5,
         categoria: {
             nombre:"Medicamentos",
-            id:"medicamentos"},
+            id:"medicamentos",
+            id2:"Ham-medicamentos",},
         nombre: 'CESAMET',
         precio: 17.17,
         imagen: "/img/7.png",
@@ -58,7 +63,8 @@ let productos = [
         id: 6,
         categoria: {
             nombre:"Medicamentos",
-            id:"medicamentos"},
+            id:"medicamentos",
+            id2:"Ham-medicamentos"},
         nombre: 'Cannabidol Oral',
         precio: 19.60,
         imagen: "/img/20.png",
@@ -69,7 +75,8 @@ let productos = [
         id: 7,
         categoria: {
             nombre:"Herbolario",
-            id:"herbolario"},
+            id:"herbolario",
+            id2:"Ham-herbolario"},
         nombre: 'Flores Secas de Lavanda',
         precio: 11.99,
         imagen: "/img/12.png",
@@ -80,7 +87,8 @@ let productos = [
         id: 8,
         categoria: {
             nombre:"Herbolario",
-            id:"herbolario"},
+            id:"herbolario",
+            id2:"Ham-herbolario"},
         nombre: 'Raíz de Valeriana Eco',
         precio: 7.90,
         imagen: "/img/4.png",
@@ -91,7 +99,8 @@ let productos = [
         id: 9,
         categoria: {
             nombre:"Herbolario",
-            id:"herbolario"},
+            id:"herbolario",
+            id2:"Ham-herbolario"},
         nombre: 'Manzanilla Amarga Flor',
         precio: 2.50,
         imagen: "/img/10.png",
@@ -102,7 +111,8 @@ let productos = [
         id: 11,
         categoria: {
             nombre:"Ortopedia",
-            id:"ortopedia"},
+            id:"ortopedia",
+            id2:"Ham-ortopedia"},
         nombre: 'Cojines con espelta',
         precio: 3.19,
         imagen: "/img/18.png",
@@ -113,7 +123,8 @@ let productos = [
         id: 12,
         categoria: {
             nombre:"Ortopedia",
-            id:"ortopedia"},
+            id:"ortopedia",
+            id2:"Ham-ortopedia"},
         nombre: 'Cojín Cuadrado en Yute',
         precio: 16.95,
         imagen: "/img/19.png",
@@ -124,7 +135,8 @@ let productos = [
         id: 13,
         categoria: {
             nombre:"Ortopedia",
-            id:"ortopedia"},
+            id:"ortopedia",
+            id2:"Ham-ortopedia"},
         nombre: 'Bastón caña de bambú',
         precio: 24.00,
         imagen: "/img/22.png",
@@ -135,7 +147,8 @@ let productos = [
         id: 14,
         categoria: {
             nombre:"Ortopedia",
-            id:"ortopedia"},
+            id:"ortopedia",
+            id2:"Ham-ortopedia"},
         nombre: 'Calcetín de Bambú',
         precio: 14.99,
         imagen: "/img/21.png",
@@ -146,7 +159,8 @@ let productos = [
         id: 15,
         categoria: {
             nombre:"Cuidado natural",
-            id:"cuidado"},
+            id:"cuidado",
+            id2:"Ham-cuidado"},
         nombre: 'Cannabis Crema De Dia',
         precio: 17.00,
         imagen: "/img/17.png",
@@ -157,7 +171,8 @@ let productos = [
         id: 16,
         categoria: {
             nombre:"Cuidado natural",
-            id:"cuidado"},
+            id:"cuidado",
+            id2:"Ham-cuidado"},
         nombre: 'Bálsamo de cannabis con CBD',
         precio: 14.50,
         imagen: "/img/23.png",
@@ -168,7 +183,8 @@ let productos = [
         id: 17,
         categoria: {
             nombre:"Cuidado natural",
-            id:"cuidado"},
+            id:"cuidado",
+            id2:"Ham-cuidado"},
         nombre: 'Crema manos Cannabis',
         precio: 3.45,
         imagen: "/img/16.png",
@@ -179,7 +195,8 @@ let productos = [
         id: 18,
         categoria: {
             nombre:"Cuidado natural",
-            id:"cuidado"},
+            id:"cuidado",
+            id2:"Ham-cuidado"},
         nombre: 'Bálsamo labial regenerador',
         precio: 4.93,
         imagen: "/img/25.png",
@@ -190,7 +207,8 @@ let productos = [
         id: 19,
         categoria: {
             nombre:"Cuidado natural",
-            id:"cuidado"},
+            id:"cuidado",
+            id2:"Ham-cuidado"},
         nombre: 'Cannabis Lote de Regalo',
         precio: 4.93,
         imagen: "/img/11.png",
@@ -205,6 +223,7 @@ const botonesCategorias = document.querySelectorAll(".boton-categoria");
 const tituloPrincipal = document.querySelector("#titulo-principal");
 let botonesAgregar = document.querySelectorAll(".producto-agregar");
 const numerito = document.querySelector("#numerito");
+const botonesHamburguesa = document.querySelectorAll(".items-lista-hamburguesa");
 
 function cargarProductos(productosElegidos) {
 
@@ -246,11 +265,36 @@ botonesCategorias.forEach(boton => {
         e.currentTarget.classList.add("active");
 
         if (e.currentTarget.id != "todos"){
+
             const productoCategoria = productos.find(producto => producto.categoria.id === e.currentTarget.id);
             tituloPrincipal.innerHTML = productoCategoria.categoria.nombre;
 
             const productosBoton = productos.filter(producto => producto.categoria.id === e.currentTarget.id);
             cargarProductos(productosBoton);
+
+        }else{
+            tituloPrincipal.innerHTML = "Todos los productos";
+            cargarProductos(productos);
+        }
+
+    });
+})
+
+botonesHamburguesa.forEach(botonH => {
+    botonH.addEventListener("click", (e) => {
+        
+        //esto es para quitar el active de los otros
+        botonesHamburguesa.forEach(botonH => botonH.classList.remove("active"));
+        
+        //le damos el active a este
+        e.currentTarget.classList.add("active");
+
+        if (e.currentTarget.id != "Ham-todos"){
+            const productoCategoriaH = productos.find(producto => producto.categoria.id2 === e.currentTarget.id);
+            tituloPrincipal.innerHTML = productoCategoriaH.categoria.nombre;
+
+            const productosBotonH = productos.filter(producto => producto.categoria.id2 === e.currentTarget.id);
+            cargarProductos(productosBotonH);
         }else{
             tituloPrincipal.innerHTML = "Todos los productos";
             cargarProductos(productos);
