@@ -218,12 +218,15 @@ let productos = [
 
 ];
 
+const productosDesdeElCarrito = localStorage.getItem("productos-en-carrito");
 const contenedorProductos = document.querySelector("#contenedor-productos");
 const botonesCategorias = document.querySelectorAll(".boton-categoria");
 const tituloPrincipal = document.querySelector("#titulo-principal");
 let botonesAgregar = document.querySelectorAll(".producto-agregar");
 const numerito = document.querySelector("#numerito");
 const botonesHamburguesa = document.querySelectorAll(".items-lista-hamburguesa");
+
+
 
 function cargarProductos(productosElegidos) {
 
@@ -254,6 +257,7 @@ function cargarProductos(productosElegidos) {
 }
 
 cargarProductos(productos);
+
 
 botonesCategorias.forEach(boton => {
     boton.addEventListener("click", (e) => {

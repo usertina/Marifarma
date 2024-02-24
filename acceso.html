@@ -14,62 +14,93 @@
 
     <header id="home" class="home">
 
-            <div class="fila1">
-               <div><a href="index.html"><img class="logo" src="/img/logo.paracoders.webp" alt=""></a></div>
-               <h1 class="title">ParaCoders</h1>
+        <div class="fila1">
+
+           <div><a href="index.html"><img class="logo" src="/img/logo.paracoders.webp" alt=""></a></div>
+           <h1 class="title">ParaCoders</h1>
+           
+
+            <div class="hamburguesa">
+                <button id="abrir" class="abrir-menu"> <i class="fa fa-bars"></i></button> 
+
+                <nav class="nav" id="nav">
+                    <button class="cerrar-menu" id="cerrar"><i class="fa-solid fa-xmark"></i></button>
+                    <ul class="nav-list">
+                        <li><button id="Ham-todos" class="items-lista-hamburguesa active" href="/index.html"> Productos </button></li>
+                        <li><button id="Ham-medicamentos" class="items-lista-hamburguesa active" href="/index.html"> Medicamentos </button></li>
+                        <li><button id="Ham-cuidado" class="items-lista-hamburguesa active" href="/index.html"> Cuidado natural </button></li>
+                        <li><button id="Ham-herbolario" class="items-lista-hamburguesa active" href="/index.html"> Herbolario </button></li>
+                        <li><button id="Ham-ortopedia" class="items-lista-hamburguesa active" href="/index.html"> Ortopedia </button></li>
+                        <li><button id="Ham-contacto" class="items-lista-hamburguesa active" href="/contacto.html"> Contacto </button></li>
+                    </ul>
+                </nav>
+
+                
+
+<!--                     <div class="topnav" id="myTopnav">
+        
+                    <a href="index.html" class="active">Home</a>
+                    <a href="productos.html#medicamentos" class="active" id="navMedicamentosB">Medicamentos</a>
+                    <a href="#cuidado" class="active" id="navCuidadoB">Cuidado natural</a>
+                    <a href="#herbolario" class="active" id="navHerbolarioB">Herbolario</a>
+                    <a href="#ortopedia" class="active" id="navOrtopediaB">Ortopedia</a>
+                
+                </div> -->
+           </div>
+
+        </div>
+
+        <div  class="fila2">
+            <div class="divIdiomas">
+                <span class="ES idiom">ES</span>
+                <span class="EN idiom">EN</span>
+            </div>
+            <div><a href="index.html"><img class="logo2" src="/img/logo.paracoders.webp" alt=""></a></div>
                
-
-                <div class="hamburguesa">
-                    <label id="label_boton" for="boton_ham"> <i id="i" class="fa fa-bars ham"></i></label> 
-                    <input id="boton_ham" type="checkbox" value="si">
-                    
-    
-                    <div class="topnav" id="myTopnav">
-            
-                        <a href="index.html" class="active">Home</a>
-                        <a href="productos.html#medicamentos" class="active" id="navMedicamentosB">Medicamentos</a>
-                        <a href="#cuidado" class="active" id="navCuidadoB">Cuidado natural</a>
-                        <a href="#herbolario" class="active" id="navHerbolarioB">Herbolario</a>
-                        <a href="#ortopedia" class="active" id="navOrtopediaB">Ortopedia</a>
-                    
-                    </div>
-               </div>
-
-            </div>
-            <div  class="fila2">
-                    <div><a href="index.html"><img class="logo2" src="/img/logo.paracoders.webp" alt=""></a></div>
-                   <div class="buscar">
-                    <i class="fa-solid fa-magnifying-glass navegador"></i>
-                    <input class="buscador" type="text" placeholder=" Buscar...">
-                </div>
-                <div class="icono">
-                    <a href="/acceso.html"><i class="fa-solid fa-user navegador"></i></a>
-                    <a href="/carrito.html"><i class="fa-solid fa-cart-shopping navegador"></i></a>
-                    <a href="#"><i class="fa-solid fa-language"></i></a>
-
-                    <!-- foton para favoritos -->
-                    
-                    <button id="button-header-favorite">
-                        <i class="fa-regular fa-star"></i>
-                            <span class="counter-favorite">0</span>
-                    </button>
-                </div>
-            </div>
-            <div class="container-list-favorites">
-                <div class="header-favorite">
-                    <h3>Favoritos</h3>
-                    <i class="fa-solid fa-xmark" id="btn-close"></i>
-                </div>
-                <hr />
-                <div class="list-favorites">
-                    <div class="card-favorite">
-                        <p class="title">Marihuana de la buena</p>
-                        <p>20 €</p>
-                    </div>
-                </div>
+            <div class="buscar">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input class="buscador" type="text" placeholder=" Buscar...">
             </div>
 
-    </header>
+            <div class="icono">
+                <a href="/acceso.html"><i class="fa-solid fa-user"></i></a>
+
+                <!-- boton carrito -->
+
+                <button id="boton-header-carrito" class="boton-carrito active">
+                    <a href="/carrito.html"><i class="fa-solid fa-cart-shopping"></i><span id="numerito" class="numerito">0</span></a>
+                        
+                </button>
+
+                <!-- boton para favoritos -->
+                
+                <button id="button-header-favorite" class="boton-estrella">
+                    <i class="fa-regular fa-star"></i>
+                        <span class="counter-favorite numerito">0</span>
+                </button>
+
+            </div>
+
+        </div>
+
+        <!-- el contenedor de favoritos -->
+<!--            <div class="container-list-favorites">
+            <div class="header-favorite">
+                <h3>Favoritos</h3>
+                <i class="fa-solid fa-xmark" id="btn-close"></i>
+            </div> -->
+
+            <!-- la estructura de favoritos -->
+<!--                 <hr />
+            <div class="list-favorites">
+                <div class="card-favorite">
+                    <p class="title">Marihuana de la buena</p>
+                    <p>20 €</p>
+                </div>
+            </div>
+        </div> -->
+
+</header>
 
 <section class="categorias">
     <div class="5 cat">
@@ -144,6 +175,7 @@
     </footer>
     
     <script src="registro.js"></script>  
+    <script src="/js/navbar.js"></script>
 </body>
 </html>
     

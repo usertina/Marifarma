@@ -17,25 +17,32 @@ cerrar.addEventListener("click", () => {
 })
 
 botonesBurguer1.addEventListener("click", () => {
+
     nav.classList.remove("visible");
 })
 
 botonesBurguer2.addEventListener("click", () => {
+
     nav.classList.remove("visible");
 })
 
 botonesBurguer3.addEventListener("click", () => {
+
     nav.classList.remove("visible");
 })
 
 botonesBurguer4.addEventListener("click", () => {
+
     nav.classList.remove("visible");
 })
 
 botonesBurguer5.addEventListener("click", () => {
+
     nav.classList.remove("visible");
 })
 
 botonesBurguer6.addEventListener("click", () => {
+    window.location.href = "/contacto.html";
     nav.classList.remove("visible");
+
 })
