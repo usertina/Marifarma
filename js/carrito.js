@@ -82,10 +82,10 @@ function eliminarDelCarrito(e) {
 
     const index = productosEnCarrito.findIndex(producto => producto.id === idBoton);
 
-    console.log(productosEnCarrito);
+    /* console.log(productosEnCarrito); */
     productosEnCarrito.splice(index, 1);
     cargarProductosCarrito();
-    console.log(productosEnCarrito);
+    /* console.log(productosEnCarrito); */
 }
 
 botonVaciar.addEventListener("click", vaciarCarrito);

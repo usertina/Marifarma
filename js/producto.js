@@ -209,12 +209,8 @@ const numerito = document.querySelector("#numerito");
 const divContenedorGrande = document.createElement("div");
 div.classList.add("contenedor-grande-producto");
 div.innerHTML =`
-<h3 class="producto-titulo" >${producto.nombre}</h3>
-
-
+<h3 class="producto-titulo" >${productos.nombre}</h3>
 `
-
-
 function cargarProductos(productosElegidos) {
 
     contenedorProductos.innerHTML = "";//para empezar la carga desde 0
@@ -243,27 +239,3 @@ function cargarProductos(productosElegidos) {
 }
 
 cargarProductos(productos);
-
-
-/* botonesCategorias.forEach(boton => {
-    boton.addEventListener("click", (e) => {
-        
-        //esto es para quitar el active de los otros
-        botonesCategorias.forEach(boton => boton.classList.remove("active"));
-        
-        //le damos el active a este
-        e.currentTarget.classList.add("active");
-
-        if (e.currentTarget.id != "todos"){
-            const productoCategoria = productos.find(producto => producto.categoria.id === e.currentTarget.id);
-            tituloPrincipal.innerHTML = productoCategoria.categoria.nombre;
-
-            const productosBoton = productos.filter(producto => producto.categoria.id === e.currentTarget.id);
-            cargarProductos(productosBoton);
-        }else{
-            tituloPrincipal.innerHTML = "Todos los productos";
-            cargarProductos(productos);
-        }
-
-    });
-}) */
