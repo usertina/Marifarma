@@ -255,6 +255,31 @@ function cargarProductos(productosElegidos) {
 
 cargarProductos(productos);
 
+
+botonesCategorias.forEach(boton => {
+    boton.addEventListener("click", (e) => {
+
+        //esto es para quitar el active de los otros
+        botonesCategorias.forEach(boton => boton.classList.remove("active"));
+        
+        //le damos el active a este
+        e.currentTarget.classList.add("active");
+
+        if (e.currentTarget.id != "Ham-todos"){
+            const productoCategoria = productos.find(producto => producto.categoria.id === e.currentTarget.id);
+            tituloPrincipal.innerHTML = productoCategoria.categoria.nombre;
+
+
+            const productosBoton = productos.filter(producto => producto.categoria.id === e.currentTarget.id);
+            cargarProductos(productosBoton);
+
+        }else{
+            tituloPrincipal.innerHTML = "Todos los productos";
+            cargarProductos(productos);
+        }
+    });
+})
+
 botonesHamburguesa.forEach(botonH => {
     botonH.addEventListener("click", (e) => {
 
