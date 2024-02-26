@@ -60,10 +60,22 @@ function cargarProductosCarrito() {
 
     actualizarBotonesEliminar();
     actualizarTotal();
+    actualizarNumeritoCarrito();
 }
+
 
 cargarProductosCarrito();
 
+function actualizarNumeritoCarrito() {
+    // Calcular la cantidad total de productos en el carrito
+    let cantidadTotal = productosEnCarrito.reduce((acc, producto) => acc + producto.cantidad, 0);
+    
+    // Seleccionar el elemento del numerito del carrito
+    let numeritoCarritoElemento = document.getElementById("numeritoCarrito");
+    
+    // Actualizar el contenido del numerito con la cantidad total
+    numeritoCarritoElemento.innerText = cantidadTotal;
+}
 
 
 /* console.log(productosEnCarrito); */
@@ -87,6 +99,8 @@ function eliminarDelCarrito(e) {
     cargarProductosCarrito();
     /* console.log(productosEnCarrito); */
 }
+
+
 
 botonVaciar.addEventListener("click", vaciarCarrito);
 
