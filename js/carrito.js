@@ -113,3 +113,12 @@ function comparCarrito() {
     contenedorCarritoAcciones.classList.add("disabled");
     contenedorCarritoComprado.classList.remove("disabled");
 }
+
+/* const botonComprar = document.querySelector("#carrito-acciones-comprar"); */
+document.getElementById("carrito-acciones-comprar").addEventListener("click", function() {
+    let precioDiv = document.getElementById("total");
+    let precio = precioDiv.textContent.trim();
+    localStorage.setItem("precioGuardado", precio);
+    window.location.href = "/checkout.html";
+})
+
