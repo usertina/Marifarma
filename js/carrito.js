@@ -104,8 +104,8 @@ function actualizarTotal() {
 botonComprar.addEventListener("click", comparCarrito);
 
 function comparCarrito() {
-    productosEnCarrito.length = 0;
-    localStorage.setItem("productos-en-carrito", JSON.stringify(productosEnCarrito));
+/*     productosEnCarrito.length = 0; */
+    /* localStorage.setItem("productos-en-carrito", JSON.stringify(productosEnCarrito)); */
 
 
     contenedorCarritoVacio.classList.add("disabled");
@@ -118,7 +118,10 @@ function comparCarrito() {
 document.getElementById("carrito-acciones-comprar").addEventListener("click", function() {
     let precioDiv = document.getElementById("total");
     let precio = precioDiv.textContent.trim();
+
     localStorage.setItem("precioGuardado", precio);
     window.location.href = "/checkout.html";
 })
+
+
 
