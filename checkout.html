@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ParaCoders</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="/css/styles.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Kdam+Thmor+Pro&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400&family=Roboto:wght@300;400;500;900&display=swap');
       </style>
@@ -102,99 +102,127 @@
 
 </header>
 
-<section class="categorias">
-    <div class="5 cat">
-        <i class="fa-solid fa-pills"></i>
-        <a href="productos.html#medicamentos" class="N" id="navMedicamentos">Medicamentos</a>
-    </div>
-
-    <div class="6 cat">
-        <i class="fa-solid fa-seedling"></i>
-        <a href="#cuidado" class="N" id="navCuidado">Cuidado natural</a>
-    </div>
-                    
-    <div class="7 cat">
-        <i class="fa-brands fa-pagelines"></i>
-        <a href="#herbolario" class="N" id="navHerbolario">Herbolario</a>
-    </div>
-       
-    <div class="8 cat">
-        <i class="fa-solid fa-person-cane"></i>
-        <a href="#ortopedia" class="N" id="navOrtopedia">Ortopedia</a>
-    </div>
-
 <!-- checkout -->
 
 </section>
-<section class="check">
-    <h2 class="h2Checkout NPq">Modo de envío</h2>
-  
-    <label><input type="radio" name="modoEnvio" value="Domicilio">Domicilio</label> 
+<div class="checkout-contenedor">
+
+    <section class="check">
+        <h2 class="h2Checkout NPq">Modo de envío</h2>
     
-    <label><input type="radio" name="modoEnvio" value="Recogida en tienda" id="irAGoogleMaps" onchange="redirigirAGoogleMaps()">Recogida en tienda</label>
-  
-    <label><input type="radio" name="modoEnvio" value="Envio 24h">Envío 24h</label>
-  
-    <label><input type="radio" name="modoEnvio" value="Envio 48h/72h">Envío 48h/72h</label>
-  </section>
-  
-</section>  
-<section class="formulario">
-  <h2 class="h2Checkout NPq">Dirección de entrega</h1>
-
-  <label>Nombre y apellidos</label>
-  <input type="text" id="input1" class="input-box" onkeydown="saltar(event, 'input2')">
-  <label>Dirección</label>
-  <input type="text" id="input2" class="input-box" onkeydown="saltar(event, 'input3')">
-  <label>Código postal</label>
-  <input type="text" id="input3" class="input-box" onkeydown="saltar(event, 'input4')">
-  <label>Ciudad</label>
-  <input type="text" id="input4" class="input-box" onkeydown="saltar(event, 'input5')">
-  <label>Provincia</label>
-  <input type="text" id="input5" class="input-box" onkeydown="saltar(event, 'input6')">
-  <label>País</label>
-  <input type="text" id="input6" class="input-box" onkeydown="saltar(event, 'input7')">
-</section>
-
-<section class="pago">
-    <h2 class="h2Checkout NPq">Forma de pago</h2>
-  
-    <label><input type="radio" name="formaPago" value="Tarjeta">Tarjeta</label>
+    <!--  <label><input type="radio" name="modoEnvio" value="Domicilio">Domicilio</label>  -->
+        
+        <label><input type="radio" name="modoEnvio" value="Recogida en tienda" id="irAGoogleMaps" onchange="redirigirAGoogleMaps()">   &nbsp&nbspRecogida en tienda</label>
     
-    <label><input type="radio" name="formaPago" value="Contrareembolso">Contrareembolso</label>
-  
-    <label><input type="radio" name="formaPago" value="Paypal">Paypal</label>
-  
-    <label><input type="radio" name="formaPago" value="Transferencia">Transferencia</label>
-  </section>
-  
-<section class="pedido">
-  <h2 class="h2Checkout NPq">Resumen del pedido</h1>
-  <label>Productos</label>
-  <label>Subtotal</label>
-  <label>Gastos de envio</label>
-  <label>Total</label>
-</section>
+        <label><input type="radio" name="modoEnvio" value="Envio 24h">   &nbsp&nbspEnvío 24h<i class="fa-solid fa-truck-fast"></i></label> 
 
-<section class="btn">
-  <a class="aCheckout" href="carrito.html"class="boton">Revisar carrito</a>
-  <!-- Botón para abrir la ventana modal -->
-  <button class="aCheckout" id="openModalBtn">Continuar</button>
+        <label><input type="radio" name="modoEnvio" value="Envio 48h/72h">   &nbsp&nbspEnvío 48h/72h</label>
+    </section>
+    
 
-<!-- Ventana modal -->
-<div id="myModal" class="modal">
-<div class="modal-content">
-  <span class="close">&times;</span>
-  <p>¡Compra realizada con éxito! Muchas gracias.</p>
+    <section class="formulario-checkout">
+    <!--   <form id="signup-form" action="procesar_registro.php" method="post"> -->
+        <h2 class="h2Checkout NPq">Dirección de entrega</h2>
+
+        <label>Nombre y apellidos:</label>
+        <input type="text" id="input1" class="input-box" onkeydown="saltar(event, 'input2')">
+        <label>Dirección:</label>
+        <input type="text" id="input2" class="input-box" onkeydown="saltar(event, 'input3')">
+        <label>Código postal:</label>
+        <input type="text" id="input3" class="input-box" onkeydown="saltar(event, 'input4')">
+        <label>Ciudad:</label>
+        <input type="text" id="input4" class="input-box" onkeydown="saltar(event, 'input5')">
+        <label>Provincia:</label>
+        <input type="text" id="input5" class="input-box" onkeydown="saltar(event, 'input6')">
+        <label>País:</label>
+        <input type="text" id="input6" class="input-box" onkeydown="saltar(event, 'input7')">
+        <div class="boton-separado-checkout">
+            <button id="guardarDatos" class="boton-checkout">Guardar Datos</button>
+        </div>
+    </section>
+
+    <section class="pago">
+        <h2 class="h2Checkout NPq">Forma de pago</h2>
+    
+        <label><input type="radio" name="formaPago" id="Tarjeta">&nbsp&nbsp<i class="fa-brands fa-cc-visa"></i>Tarjeta</label>
+    
+
+    <!-- Primera ventana modal para ingresar los datos de la tarjeta -->
+        <div id="firstModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Ingrese los datos de su tarjeta</h2>
+                <div>
+                    <i class="fa-brands fa-cc-visa"></i>
+                    <i class="fa-brands fa-cc-mastercard"></i>
+                </div>
+
+
+                <label>Nombre y Apellidos:</label>
+                <input type="text" id="cardNombre" class="input-box" onkeydown="saltar(event, 'cardNumero')">
+
+                <label>Número de tarjeta:</label>
+                <input type="text" id="cardNumero" class="input-box" onkeydown="saltar(event, 'cardFecha')">
+
+                <label>Fecha de caducidad:</label>
+                <input type="text" id="cardFecha" class="input-box" onkeydown="saltar(event, 'cardCVV')">
+                
+                <label for="cardCVV">CVV:</label>
+                <input type="text" id="cardCVV" name="cardCVV" required>
+                <div>
+                    <button id="guardarDatosT" class="boton-checkout">Guardar Datos</button>
+                </div>
+                
+            </div>
+        </div>
+
+
+        
+        <label><input type="radio" name="formaPago" value="Contrareembolso">&nbsp&nbsp<i class="fa-solid fa-hand-holding-dollar"></i>Contrareembolso</label>
+    
+        <label>
+            <input type="radio" name="formaPago" value="Paypal">
+            <a href="https://www.paypal.com/">
+                <i class="fa-brands fa-paypal"></i> PayPal
+            </a>
+        </label>
+        
+        <label><input type="radio" name="formaPago" id="Transferencia">&nbsp&nbsp<i class="fa-solid fa-money-bill-transfer"></i>Transferencia</label>
+    
+    <!-- segunda ventana modal -->
+    <div id="secondModal" class="modal1">
+        <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Número de cuenta: IBAN 134267893434561645878</h2>
+        </div>
+    </div> 
+    
+    <section class="pedido">
+        <h2 class="h2Checkout NPq">Resumen del pedido</h1>
+        <label>Productos</label>
+        <label>Subtotal</label>
+        <label>Gastos de envio</label>
+        <label>Total</label>
+    </section>
+
+    <section class="botones">
+        <button id="volverCarrito" class="boton-checkout">
+            <a href="carrito.html">Revisar carrito</a>
+        </button>
+        
+        <button id="openModalBtn" class="boton-checkout">Continuar</button>  
+    </section>
+
+    <!-- tercera ventana modal -->
+
+    <div id="terceraModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Compra realizada muchas gracias!!!! <i class="fa-solid fa-heart fa-beat" style="--fa-beat-fade-opacity: 0.1; --fa-beat-fade-scale: 1.25;"></i></h2>
+    </div>
+    </div>
+    </section> 
 </div>
-</div>
-
-</section>
-
-
-
-
-
 
 <footer>
   <div class="siguenos">
@@ -223,17 +251,6 @@
 
 
 <script>
-    var checkbox = document.getElementById('miCheckbox');
-    checkbox.addEventListener('change',function(){
-        if(this.checked){
-            window.location = "crearCuenta.html";
-        }
-    });
-
-</script>
-
-
-<script>
     function redirigirAGoogleMaps() {
         // Obtener el checkbox
         var checkbox = document.getElementById("irAGoogleMaps");
@@ -249,8 +266,10 @@
     }
 </script>
 
-<script src="script.js"></script>
-<script src="pago.js"></script>
+<script src="/js/saltoEnter.js"></script>
+<script src="/js/pagoTarjeta.js"></script>
+<script src="/js/storage.js"></script>
+<script src="/js/storageTarjeta.js"></script>
 <script src="/js/navbar.js"></script>
 </body>
 </html>
