@@ -63,6 +63,16 @@ a:visited {
     cursor: pointer;
 }
 
+.btnIdioma{
+    background-color: transparent;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+
+}
+
 .idiom:hover {
     color: var(--colorhuevo);
     text-shadow: 0rem 0rem 0.5rem var(--naranja);

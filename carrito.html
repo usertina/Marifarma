@@ -6,6 +6,7 @@
     <title>ParaCoders</title>
     <link rel="stylesheet" href="/css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="/js/cambiarIdioma.js"></script>
 </head>
 <body>
 
@@ -18,41 +19,49 @@
            
 
             <div class="hamburguesa">
-                <button id="abrir" class="abrir-menu"> <i class="fa fa-bars"></i></button> 
+                <button id="abrir" class="abrir-menu"> <i class="fa fa-bars"></i>
+                </button> 
 
                 <nav class="nav" id="nav">
-                    <button class="cerrar-menu" id="cerrar"><i class="fa-solid fa-xmark"></i></button>
+                    <button class="cerrar-menu" id="cerrar"><i class="fa-solid fa-xmark"></i>
+                    </button>
                     <ul class="nav-list">
-                        <li><button id="Ham-todos" class="items-lista-hamburguesa active" href="/index.html"> Productos </button></li>
-                        <li><button id="Ham-medicamentos" class="items-lista-hamburguesa active" href="/index.html"> Medicamentos </button></li>
-                        <li><button id="Ham-cuidado" class="items-lista-hamburguesa active" href="/index.html"> Cuidado natural </button></li>
-                        <li><button id="Ham-herbolario" class="items-lista-hamburguesa active" href="/index.html"> Herbolario </button></li>
-                        <li><button id="Ham-ortopedia" class="items-lista-hamburguesa active" href="/index.html"> Ortopedia </button></li>
-                        <li><button id="Ham-contacto" class="items-lista-hamburguesa active" href="/contacto.html"> Contacto </button></li>
+                        <li>
+                            <button id="Ham-todos" class="items-lista-hamburguesa active" href="/index.html" data-i18n="Productos"> Productos 
+                            </button>
+                        </li>
+                        <li>
+                            <button id="Ham-medicamentos" class="items-lista-hamburguesa active" href="/index.html" data-i18n="Medicamentos"> Medicamentos </button>
+                        </li>
+                        <li>
+                            <button id="Ham-cuidado" class="items-lista-hamburguesa active" href="/index.html" data-i18n="CuidadoNatural"> Cuidado natural </button>
+                        </li>
+                        <li>
+                            <button id="Ham-herbolario" class="items-lista-hamburguesa active" href="/index.html" data-i18n="Herbolario"> Herbolario </button>
+                        </li>
+                        <li>
+                            <button id="Ham-ortopedia" class="items-lista-hamburguesa active" href="/index.html" data-i18n="Ortopedia"> Ortopedia </button>
+                        </li>
+                        <li>
+                            <button id="Ham-contacto" class="items-lista-hamburguesa active" href="/contacto.html" data-i18n="Contacto"> Contacto </button>
+                        </li>
                     </ul>
                 </nav>
 
                 
-
-<!--                     <div class="topnav" id="myTopnav">
-        
-                    <a href="index.html" class="active">Home</a>
-                    <a href="productos.html#medicamentos" class="active" id="navMedicamentosB">Medicamentos</a>
-                    <a href="#cuidado" class="active" id="navCuidadoB">Cuidado natural</a>
-                    <a href="#herbolario" class="active" id="navHerbolarioB">Herbolario</a>
-                    <a href="#ortopedia" class="active" id="navOrtopediaB">Ortopedia</a>
-                
-                </div> -->
            </div>
 
         </div>
 
         <div  class="fila2">
             <div class="divIdiomas">
-                <span class="ES idiom">ES</span>
-                <span class="EN idiom">EN</span>
+                <button onclick="cambiarIdioma('es')" class="ES idiom btnIdioma">ES</button>
+                <button onclick="cambiarIdioma('en')" class="EN idiom btnIdioma">EN</button>
             </div>
-            <div><a href="index.html"><img class="logo2" src="/img/logo.paracoders.webp" alt=""></a></div>
+            <div>
+                <a href="index.html"><img class="logo2" src="/img/logo.paracoders.webp" alt="">
+                </a>
+            </div>
                
             <div class="buscar">
                 <i class="fa-solid fa-magnifying-glass"></i>
@@ -79,24 +88,6 @@
             </div>
 
         </div>
-
-        <!-- el contenedor de favoritos -->
-<!--            <div class="container-list-favorites">
-            <div class="header-favorite">
-                <h3>Favoritos</h3>
-                <i class="fa-solid fa-xmark" id="btn-close"></i>
-            </div> -->
-
-            <!-- la estructura de favoritos -->
-<!--                 <hr />
-            <div class="list-favorites">
-                <div class="card-favorite">
-                    <p class="title">Marihuana de la buena</p>
-                    <p>20 €</p>
-                </div>
-            </div>
-        </div> -->
-
 </header>
 
     <article class="wrapper">
@@ -146,31 +137,35 @@
         </div>
     </article>
 
-<footer>
-    <div class="siguenos">
-        <h2 class="redesTit">Síguenos</h2>
-        <div class="RRSS">
-            <a href="#"><i class="fa-brands rrss fa-square-facebook"></i></a>
-            <a href="#"><i class="fa-brands rrss fa-square-instagram"></i></a>
-            <a href="#"><i class="fa-brands rrss fa-square-google-plus"></i></a>
-            <a href="#"><i class="fa-brands rrss fa-square-youtube"></i></a>
-
-
+    <footer>
+        <div class="siguenos">
+            <h2 class="redesTit" data-i18n="Siguenos">Síguenos</h2>
+            <div class="RRSS">
+                <a href="#"><i class="fa-brands rrss fa-square-facebook"></i></a>
+                <a href="#"><i class="fa-brands rrss fa-square-instagram"></i></a>
+                <a href="#"><i class="fa-brands rrss fa-square-google-plus"></i></a>
+                <a href="#"><i class="fa-brands rrss fa-square-youtube"></i></a>
+    
+    
+            </div>
         </div>
-    </div>
-    <div class="derechos">
-        <p>© 2024 ParaCoders SL.</p>
-        <p>Todos los derechos reservados.</p>
-        <p>Todos los productos incluyen IVA.</p>
-    </div>
-    <div class="politicas">
-        <a href="#"><p>Política de Privacidad</p></a>
-        <a href="#"><p>Condiciones de Uso</p></a>
-        <a href="#"><p>Condiciones de Contratación</p></a>
-        <a href="#"><p>Política de Cookies</p></a>
-    </div>
-</footer>
-<script src="/js/carrito.js"></script>
-<script src="/js/navbar.js"></script>
+        <div class="derechos">
+            <p>© 2024 ParaCoders SL.</p>
+            <p data-i18n="Todos_los_derechos_reservados">Todos los derechos reservados.</p>
+            <p data-i18n="Todos_los_productos_incluyen_IVA">Todos los productos incluyen IVA</p>
+        </div>
+        <div class="politicas">
+            <a href="#"><p data-i18n="Politica_Privacidad">Política de Privacidad</p></a>
+            <a href="#"><p data-i18n="Condiciones_Uso">Condiciones de Uso</p></a>
+            <a href="#"><p data-i18n="Condiciones_Contratacion">Condiciones de Contratación</p></a>
+            <a href="#"><p data-i18n="Politica_Cookies">Política de Cookies</p></a>
+        </div>
+    </footer>
+    <script src="/js/productos.js"></script>
+    <script src="/js/favoritos.js"></script>
+    <script src="/js/carrito.js"></script>
+    <script src="/js/navbar.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/i18next/dist/umd/i18next.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/i18next-browser-languagedetector/dist/umd/i18nextBrowserLanguageDetector.min.js"></script>
 </body>
 </html>

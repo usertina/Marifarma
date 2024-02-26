@@ -9,6 +9,7 @@
         @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Kdam+Thmor+Pro&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400&family=Roboto:wght@300;400;500;900&display=swap');
       </style>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="/js/cambiarIdioma.js"></script>
 </head>
 <body>
 
@@ -21,41 +22,49 @@
            
 
             <div class="hamburguesa">
-                <button id="abrir" class="abrir-menu"> <i class="fa fa-bars"></i></button> 
+                <button id="abrir" class="abrir-menu"> <i class="fa fa-bars"></i>
+                </button> 
 
                 <nav class="nav" id="nav">
-                    <button class="cerrar-menu" id="cerrar"><i class="fa-solid fa-xmark"></i></button>
+                    <button class="cerrar-menu" id="cerrar"><i class="fa-solid fa-xmark"></i>
+                    </button>
                     <ul class="nav-list">
-                        <li><button id="Ham-todos" class="items-lista-hamburguesa active" href="/index.html"> Productos </button></li>
-                        <li><button id="Ham-medicamentos" class="items-lista-hamburguesa active" href="/index.html"> Medicamentos </button></li>
-                        <li><button id="Ham-cuidado" class="items-lista-hamburguesa active" href="/index.html"> Cuidado natural </button></li>
-                        <li><button id="Ham-herbolario" class="items-lista-hamburguesa active" href="/index.html"> Herbolario </button></li>
-                        <li><button id="Ham-ortopedia" class="items-lista-hamburguesa active" href="/index.html"> Ortopedia </button></li>
-                        <li><button id="Ham-contacto" class="items-lista-hamburguesa active" href="/contacto.html"> Contacto </button></li>
+                        <li>
+                            <button id="Ham-todos" class="items-lista-hamburguesa active" href="/index.html" data-i18n="Productos"> Productos 
+                            </button>
+                        </li>
+                        <li>
+                            <button id="Ham-medicamentos" class="items-lista-hamburguesa active" href="/index.html" data-i18n="Medicamentos"> Medicamentos </button>
+                        </li>
+                        <li>
+                            <button id="Ham-cuidado" class="items-lista-hamburguesa active" href="/index.html" data-i18n="CuidadoNatural"> Cuidado natural </button>
+                        </li>
+                        <li>
+                            <button id="Ham-herbolario" class="items-lista-hamburguesa active" href="/index.html" data-i18n="Herbolario"> Herbolario </button>
+                        </li>
+                        <li>
+                            <button id="Ham-ortopedia" class="items-lista-hamburguesa active" href="/index.html" data-i18n="Ortopedia"> Ortopedia </button>
+                        </li>
+                        <li>
+                            <button id="Ham-contacto" class="items-lista-hamburguesa active" href="/contacto.html" data-i18n="Contacto"> Contacto </button>
+                        </li>
                     </ul>
                 </nav>
 
                 
-
-<!--                     <div class="topnav" id="myTopnav">
-        
-                    <a href="index.html" class="active">Home</a>
-                    <a href="productos.html#medicamentos" class="active" id="navMedicamentosB">Medicamentos</a>
-                    <a href="#cuidado" class="active" id="navCuidadoB">Cuidado natural</a>
-                    <a href="#herbolario" class="active" id="navHerbolarioB">Herbolario</a>
-                    <a href="#ortopedia" class="active" id="navOrtopediaB">Ortopedia</a>
-                
-                </div> -->
            </div>
 
         </div>
 
         <div  class="fila2">
             <div class="divIdiomas">
-                <span class="ES idiom">ES</span>
-                <span class="EN idiom">EN</span>
+                <button onclick="cambiarIdioma('es')" class="ES idiom btnIdioma">ES</button>
+                <button onclick="cambiarIdioma('en')" class="EN idiom btnIdioma">EN</button>
             </div>
-            <div><a href="index.html"><img class="logo2" src="/img/logo.paracoders.webp" alt=""></a></div>
+            <div>
+                <a href="index.html"><img class="logo2" src="/img/logo.paracoders.webp" alt="">
+                </a>
+            </div>
                
             <div class="buscar">
                 <i class="fa-solid fa-magnifying-glass"></i>
@@ -82,24 +91,6 @@
             </div>
 
         </div>
-
-        <!-- el contenedor de favoritos -->
-<!--            <div class="container-list-favorites">
-            <div class="header-favorite">
-                <h3>Favoritos</h3>
-                <i class="fa-solid fa-xmark" id="btn-close"></i>
-            </div> -->
-
-            <!-- la estructura de favoritos -->
-<!--                 <hr />
-            <div class="list-favorites">
-                <div class="card-favorite">
-                    <p class="title">Marihuana de la buena</p>
-                    <p>20 €</p>
-                </div>
-            </div>
-        </div> -->
-
 </header>
 
 <!-- checkout -->
@@ -108,36 +99,36 @@
 <div class="checkout-contenedor">
 
     <section class="check">
-        <h2 class="h2Checkout NPq">Modo de envío</h2>
+        <h2 class="h2Checkout NPq" data-i18n="ModoEnvio">Modo de envío</h2>
     
     <!--  <label><input type="radio" name="modoEnvio" value="Domicilio">Domicilio</label>  -->
         
-        <label><input type="radio" name="modoEnvio" value="Recogida en tienda" id="irAGoogleMaps" onchange="redirigirAGoogleMaps()">   &nbsp&nbspRecogida en tienda</label>
+        <label><input type="radio" name="modoEnvio" value="Recogida en tienda" id="irAGoogleMaps" onchange="redirigirAGoogleMaps()" >   &nbsp&nbsp <span  data-i18n="Recogida_Tienda">Recogida en tienda</span></label>
     
-        <label><input type="radio" name="modoEnvio" value="Envio 24h">   &nbsp&nbspEnvío 24h<i class="fa-solid fa-truck-fast"></i></label> 
+        <label><input type="radio" name="modoEnvio" value="Envio 24h" data-i18n="Envio24">   &nbsp&nbsp <span  data-i18n="Envio24">Envío 24h</span><i class="fa-solid fa-truck-fast"></i></label> 
 
-        <label><input type="radio" name="modoEnvio" value="Envio 48h/72h">   &nbsp&nbspEnvío 48h/72h</label>
+        <label><input type="radio" name="modoEnvio" value="Envio 48h/72h" >   &nbsp&nbsp <span data-i18n="Envio48">Envío 48h/72h</span></label>
     </section>
     
 
     <section class="formulario-checkout">
     <!--   <form id="signup-form" action="procesar_registro.php" method="post"> -->
-        <h2 class="h2Checkout NPq">Dirección de entrega</h2>
+        <h2 class="h2Checkout NPq" data-i18n="direccionEntrega">Dirección de entrega</h2>
 
-        <label>Nombre y apellidos:</label>
+        <label data-i18n="NoimbreApellido">Nombre y apellidos:</label>
         <input type="text" id="input1" class="input-box" onkeydown="saltar(event, 'input2')">
-        <label>Dirección:</label>
+        <label data-i18n="direccionCasa">Dirección:</label>
         <input type="text" id="input2" class="input-box" onkeydown="saltar(event, 'input3')">
-        <label>Código postal:</label>
+        <label data-i18n="CodigoPostal">Código postal:</label>
         <input type="text" id="input3" class="input-box" onkeydown="saltar(event, 'input4')">
-        <label>Ciudad:</label>
+        <label data-i18n="Ciudad">Ciudad:</label>
         <input type="text" id="input4" class="input-box" onkeydown="saltar(event, 'input5')">
-        <label>Provincia:</label>
+        <label data-i18n="Provincia">Provincia:</label>
         <input type="text" id="input5" class="input-box" onkeydown="saltar(event, 'input6')">
-        <label>País:</label>
+        <label data-i18n="Pais">País:</label>
         <input type="text" id="input6" class="input-box" onkeydown="saltar(event, 'input7')">
         <div class="boton-separado-checkout">
-            <button id="guardarDatos" class="boton-checkout">Guardar Datos</button>
+            <button id="guardarDatos" class="boton-checkout"><span data-i18n="GuardarDatos">Guardar Datos</span></button>
         </div>
     </section>
 
@@ -178,39 +169,44 @@
 
 
         
-        <label><input type="radio" name="formaPago" value="Contrareembolso">&nbsp&nbsp<i class="fa-solid fa-hand-holding-dollar"></i>Contrareembolso</label>
+        <label><input type="radio" name="formaPago" value="Contrareembolso">&nbsp&nbsp<i class="fa-solid fa-hand-holding-dollar"></i><span data-i18n="Contrareembolso">
+
+       Contrareembolso </span></label>
     
         <label>
             <input type="radio" name="formaPago" value="Paypal">
             <a href="https://www.paypal.com/">
-                <i class="fa-brands fa-paypal"></i> PayPal
+                <i class="fa-brands fa-paypal"></i>
+                <span data-i18n="PayPal">PayPal</span>
             </a>
         </label>
         
-        <label><input type="radio" name="formaPago" id="Transferencia">&nbsp&nbsp<i class="fa-solid fa-money-bill-transfer"></i>Transferencia</label>
+        <label><input type="radio" name="formaPago" id="Transferencia">&nbsp&nbsp<i class="fa-solid fa-money-bill-transfer"></i><span data-i18n="Transferencia">Transferencia</span></label>
     
     <!-- segunda ventana modal -->
     <div id="secondModal" class="modal1">
         <div class="modal-content">
         <span class="close">&times;</span>
-        <h2>Número de cuenta: IBAN 134267893434561645878</h2>
+        <h2 data-i18n="NumeroCuenta">Número de cuenta: IBAN 134267893434561645878</h2>
         </div>
     </div> 
     
     <section class="pedido">
-        <h2 class="h2Checkout NPq">Resumen del pedido</h1>
-        <label>Productos<span id="mostrarCantidad"></span></label>
+        <h2 class="h2Checkout NPq" ResumenPedido>Resumen del pedido</h1>
+        <label data-i18n="Productos">Productos<span id="mostrarCantidad"></span></label>
         <label>Subtotal</label>
-        <label>Gastos de envio</label>
+        <label data-i18n="GastosEnvio">Gastos de envio</label>
         <label>Total <span id="mostrarID"></span></label>
     </section>
 
     <section class="botones">
         <button id="volverCarrito" class="boton-checkout">
-            <a href="carrito.html">Revisar carrito</a>
+            <a href="carrito.html" data-i18n="RevisarCarrito">
+                <span data-i18n="RevisarCarrito">Revisar carrito</span>
+            </a>
         </button>
         
-        <button id="openModalBtn" class="boton-checkout">Continuar</button>  
+        <button id="openModalBtn" class="boton-checkout"><span data-i18n="Continuar">Continuar</span></button>  
     </section>
 
     <!-- tercera ventana modal -->
@@ -218,35 +214,35 @@
     <div id="terceraModal" class="modal">
     <div class="modal-content">
         <span class="close">&times;</span>
-        <h2>Compra realizada muchas gracias!!!! <i class="fa-solid fa-heart fa-beat" style="--fa-beat-fade-opacity: 0.1; --fa-beat-fade-scale: 1.25;"></i></h2>
+        <h2 data-i18n="CompraRealizada">Compra realizada muchas gracias!!!! <i class="fa-solid fa-heart fa-beat" style="--fa-beat-fade-opacity: 0.1; --fa-beat-fade-scale: 1.25;"></i></h2>
     </div>
     </div>
     </section> 
 </div>
 
 <footer>
-  <div class="siguenos">
-      <h2 class="redesTit">Síguenos</h2>
-      <div class="RRSS">
-          <a href="#"><i class="fa-brands rrss fa-square-facebook"></i></a>
-          <a href="#"><i class="fa-brands rrss fa-square-instagram"></i></a>
-          <a href="#"><i class="fa-brands rrss fa-square-google-plus"></i></a>
-          <a href="#"><i class="fa-brands rrss fa-square-youtube"></i></a>
+    <div class="siguenos">
+        <h2 class="redesTit" data-i18n="Siguenos">Síguenos</h2>
+        <div class="RRSS">
+            <a href="#"><i class="fa-brands rrss fa-square-facebook"></i></a>
+            <a href="#"><i class="fa-brands rrss fa-square-instagram"></i></a>
+            <a href="#"><i class="fa-brands rrss fa-square-google-plus"></i></a>
+            <a href="#"><i class="fa-brands rrss fa-square-youtube"></i></a>
 
 
-      </div>
-  </div>
-  <div class="derechos">
-      <p>© 2024 ParaCoders SL.</p>
-      <p>Todos los derechos reservados.</p>
-      <p>Todos los productos incluyen IVA.</p>
-  </div>
-  <div class="politicas">
-      <a href="#"><p>Política de Privacidad</p></a>
-      <a href="#"><p>Condiciones de Uso</p></a>
-      <a href="#"><p>Condiciones de Contratación</p></a>
-      <a href="#"><p>Política de Cookies</p></a>
-  </div>
+        </div>
+    </div>
+    <div class="derechos">
+        <p>© 2024 ParaCoders SL.</p>
+        <p data-i18n="Todos_los_derechos_reservados">Todos los derechos reservados.</p>
+        <p data-i18n="Todos_los_productos_incluyen_IVA">Todos los productos incluyen IVA</p>
+    </div>
+    <div class="politicas">
+        <a href="#"><p data-i18n="Politica_Privacidad">Política de Privacidad</p></a>
+        <a href="#"><p data-i18n="Condiciones_Uso">Condiciones de Uso</p></a>
+        <a href="#"><p data-i18n="Condiciones_Contratacion">Condiciones de Contratación</p></a>
+        <a href="#"><p data-i18n="Politica_Cookies">Política de Cookies</p></a>
+    </div>
 </footer>
 
 
@@ -272,5 +268,6 @@
 <script src="/js/storageTarjeta.js"></script>
 <script src="/js/checkout.js"></script>
 <script src="/js/navbar.js"></script>
+<script src="/js/carrito.js"></script>
 </body>
 </html>

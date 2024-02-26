@@ -104,24 +104,20 @@ function actualizarTotal() {
 botonComprar.addEventListener("click", comparCarrito);
 
 function comparCarrito() {
-/*     productosEnCarrito.length = 0; */
-    /* localStorage.setItem("productos-en-carrito", JSON.stringify(productosEnCarrito)); */
 
+contenedorCarritoVacio.classList.add("disabled");contenedorCarritoProductos.classList.add("disabled");
+contenedorCarritoAcciones.classList.add("disabled");
+contenedorCarritoComprado.classList.remove("disabled");
 
-    contenedorCarritoVacio.classList.add("disabled");
-    contenedorCarritoProductos.classList.add("disabled");
-    contenedorCarritoAcciones.classList.add("disabled");
-    contenedorCarritoComprado.classList.remove("disabled");
+            
+let precioDiv = document.getElementById("total");
+let precio = precioDiv.textContent.trim();
+            
+localStorage.setItem("precioGuardado", precio);
+window.location.href = "/checkout.html";
+            
 }
 
-/* const botonComprar = document.querySelector("#carrito-acciones-comprar"); */
-document.getElementById("carrito-acciones-comprar").addEventListener("click", function() {
-    let precioDiv = document.getElementById("total");
-    let precio = precioDiv.textContent.trim();
-
-    localStorage.setItem("precioGuardado", precio);
-    window.location.href = "/checkout.html";
-})
 
 
 
