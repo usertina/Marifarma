@@ -634,13 +634,67 @@ small {
 /* ............Accesso...........*/
 /* ............................... */
 
-.form-acceso{
+.acceso-container{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 40rem;
+
 }
+
+.formulario-acceso {
+    background-color:#F2F2F2;
+    width: 20rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 25rem;
+    border-radius: 2rem;
+   }
+
+   .formulario-acceso input{
+    background-color: #FFF0BA;
+    border-radius: 0.4rem;
+    width: 15rem;
+    height: 2rem;
+}
+
+.texto h1 h2{
+    margin-bottom: 1rem;
+    font-family: 'Comfortaa', sans-serif; 
+    margin-left: 3rem;
+    font-size: 2rem;
+
+    
+ 
+}
+  
+  .texto h6 {
+    text-align: center;
+    color: gray;
+    font-family: 'Comfortaa', sans-serif;
+    width: 15rem;
+    margin-bottom: 1rem;
+    margin-left: 2rem;
+
+  }
+  
+  .buttonAcceso {
+    background-color: #E5B50E;
+    width: 13rem;
+    height: 2rem;
+    margin-top: 3rem;
+    border-radius: 0.4rem;
+    
+    
+
+  }
+  .buttonAcceso:hover{
+    background-color: #B0A326;
+    box-shadow: 0.5rem 0.5rem 0.5rem  var(--naranja);
+
+  }
 /* ............................... */
 /* ..............footer ...........*/
 /* ............................... */
