@@ -2,8 +2,9 @@
     {
         "id": 1,
         "categoria": {
-            "nombre": "medicamentos",
-            "id": "medicamentos"
+            "nombre": "Medicamentos",
+            "id": "medicamentos",
+            "id2": "Ham-medicamentos"
         },
         "nombre": "Aceite de cannabis CBD 25%",
         "precio": 15.61,
@@ -14,8 +15,9 @@
     {
         "id": 2,
         "categoria": {
-            "nombre": "herbolario",
-            "id": "herbolario"
+            "nombre": "Herbolario",
+            "id": "herbolario",
+            "id2": "Ham-herbolario"
         },
         "nombre": "AMNESIA CBD BOOST",
         "precio": 10.75,
@@ -26,8 +28,9 @@
     {
         "id": 3,
         "categoria": {
-            "nombre": "medicamentos",
-            "id": "medicamentos"
+            "nombre": "Medicamentos",
+            "id": "medicamentos",
+            "id2": "Ham-medicamentos"
         },
         "nombre": "WELCOME WINTER KIT",
         "precio": 50.00,
@@ -38,8 +41,9 @@
     {
         "id": 4,
         "categoria": {
-            "nombre": "medicamentos",
-            "id": "medicamentos"
+            "nombre": "Medicamentos",
+            "id": "medicamentos",
+            "id2": "Ham-medicamentos"
         },
         "nombre": "SHATTER CBD LEMON",
         "precio": 4.50,
@@ -50,8 +54,9 @@
     {
         "id": 5,
         "categoria": {
-            "nombre": "medicamentos",
-            "id": "medicamentos"
+            "nombre": "Medicamentos",
+            "id": "medicamentos",
+            "id2": "Ham-medicamentos"
         },
         "nombre": "CESAMET",
         "precio": 17.17,
@@ -62,8 +67,9 @@
     {
         "id": 6,
         "categoria": {
-            "nombre": "medicamentos",
-            "id": "medicamentos"
+            "nombre": "Medicamentos",
+            "id": "medicamentos",
+            "id2": "Ham-medicamentos"
         },
         "nombre": "Cannabidol Oral",
         "precio": 19.60,
@@ -74,8 +80,9 @@
     {
         "id": 7,
         "categoria": {
-            "nombre": "herbolario",
-            "id": "herbolario"
+            "nombre": "Herbolario",
+            "id": "herbolario",
+            "id2": "Ham-herbolario"
         },
         "nombre": "Flores Secas de Lavanda",
         "precio": 11.99,
@@ -86,8 +93,9 @@
     {
         "id": 8,
         "categoria": {
-            "nombre": "herbolario",
-            "id": "herbolario"
+            "nombre": "Herbolario",
+            "id": "herbolario",
+            "id2": "Ham-herbolario"
         },
         "nombre": "Raíz de Valeriana Eco",
         "precio": 7.90,
@@ -98,8 +106,9 @@
     {
         "id": 9,
         "categoria": {
-            "nombre": "herbolario",
-            "id": "herbolario"
+            "nombre": "Herbolario",
+            "id": "herbolario",
+            "id2": "Ham-herbolario"
         },
         "nombre": "Manzanilla Amarga Flor",
         "precio": 2.50,
@@ -110,8 +119,9 @@
     {
         "id": 11,
         "categoria": {
-            "nombre": "ortopedia",
-            "id": "ortopedia"
+            "nombre": "Ortopedia",
+            "id": "ortopedia",
+            "id2": "Ham-ortopedia"
         },
         "nombre": "Cojines con espelta",
         "precio": 3.19,
@@ -122,8 +132,9 @@
     {
         "id": 12,
         "categoria": {
-            "nombre": "ortopedia",
-            "id": "ortopedia"
+            "nombre": "Ortopedia",
+            "id": "ortopedia",
+            "id2": "Ham-ortopedia"
         },
         "nombre": "Cojín Cuadrado en Yute",
         "precio": 16.95,
@@ -134,8 +145,9 @@
     {
         "id": 13,
         "categoria": {
-            "nombre": "ortopedia",
-            "id": "ortopedia"
+            "nombre": "Ortopedia",
+            "id": "ortopedia",
+            "id2": "Ham-ortopedia"
         },
         "nombre": "Bastón caña de bambú",
         "precio": 24.00,
@@ -146,8 +158,9 @@
     {
         "id": 14,
         "categoria": {
-            "nombre": "ortopedia",
-            "id": "ortopedia"
+            "nombre": "Ortopedia",
+            "id": "ortopedia",
+            "id2": "Ham-ortopedia"
         },
         "nombre": "Calcetín de Bambú",
         "precio": 14.99,
@@ -158,8 +171,9 @@
     {
         "id": 15,
         "categoria": {
-            "nombre": "cuidado",
-            "id": "cuidado"
+            "nombre": "Cuidado natural",
+            "id": "cuidado",
+            "id2": "Ham-cuidado"
         },
         "nombre": "Cannabis Crema De Dia",
         "precio": 17.00,
@@ -170,49 +184,66 @@
     {
         "id": 16,
         "categoria": {
-            "nombre": "cuidado",
-            "id": "cuidado"
+            "nombre": "Cuidado natural",
+            "id": "cuidado",
+            "id2": "Ham-cuidado"
         },
         "nombre": "Bálsamo de cannabis con CBD",
         "precio": 14.50,
         "imagen": "/img/23.png",
         "otrafoto": "/img/balsamo_muscular_cannabis.webp",
-        "descripcion": "Bálsamo de cannabis 100% natural elaborado artesanalmente con aceite de cannabis de variedad terapéutica “Indica“, cera natural de abeja, esencia pura natural de clavo y CBD liofilizado. El aceite de cáñamo o cannabis es un analgésico natural que está indicado para dolores musculares y articulares en general, normalmente dolores de categoría crónico, como artrosis, artritis, reumas, fibromialgias, etc… El aceite esencial de clavo es un potentísimo analgésico natural. La sinergia de ambos aceites, junto con el CBD liofilizado, hacen de este bálsamo de cannabis un potente y muy efectivo antiinflamatorio y analgésico. El aceite de cáñamo es eficaz también en el tratamiento de dolencias de la piel como eczemas, psoriasis, dermatitis atópica… Este bálsamo tiene una textura untuosa, algo aceitosa, que permite que se extienda y penetre en la piel muy fácilmente. Su aroma fresco y mentolado proporciona una sensación inmediata de paz y calma. Se aplica como una pomada masajeando la zona afectada y se absorbe muy rápidamente. Es preferible usar muy poquita cantidad 2 o 3 veces al día. No contiene THC. Está indicado para uso diario. Formato: 50gr."
+        "descripcion": "Bálsamo de cannabis 100% natural elaborado artesanalmente con aceite de cannabis de variedad terapéutica “Indica“, cera natural de abeja, esencia pura natural de clavo y CBD liofilizado. El aceite de cáñamo o cannabis es un analgésico natural que está indicado para dolores musculares y articulares en general, normalmente dolores de categoria crónico, como artrosis, artritis, reumas, fibromialgias, etc… El aceite esencial de clavo es un potentísimo analgésico natural. La sinergia de ambos aceites, junto con el CBD liofilizado, hacen de este bálsamo de cannabis un potente y muy efectivo antiinflamatorio y analgésico. El aceite de cáñamo es eficaz también en el tratamiento de dolencias de la piel como eczemas, psoriasis, dermatitis atópica… Este bálsamo tiene una textura untuosa, algo aceitosa, que permite que se extienda y penetre en la piel muy facilmente. Su aroma fresco y mentolado proporciona una sensación inmediata de paz y calma. Se aplica como una pomada masajeando la zona afectada y se absorbe muy rápidamente. Es preferible usar muy poquita cantidad 2 o 3 veces al día. No contiene THC. Está indicado para uso diario. Formato: 50gr."
     },
     {
         "id": 17,
         "categoria": {
-            "nombre": "cuidado",
-            "id": "cuidado"
+            "nombre": "Cuidado natural",
+            "id": "cuidado",
+            "id2": "Ham-cuidado"
         },
         "nombre": "Crema manos Cannabis",
         "precio": 3.45,
         "imagen": "/img/16.png",
         "otrafoto": "/img/cremamanoscannabis.webp",
-        "descripcion": "Puedes comprar el Cannabis Crema de Manos Nutritiva 50 ml de BABARIA al mejor precio en nuestra parafarmacia online. Si quieres conocer como Cannabis Crema de Manos Nutritiva 50 ml Babaria, puede ayudarte, aquí te explicamos como funciona y que hace. Este producto cuenta con una delicada fórmula, cuidadosamente diseñada para brindar el mejor cuidado a las pieles más sensibles. Tiene como ingrediente principal el aceite de cannabis que es rico en ácidos grasos esenciales, vitaminas, aminoácidos y antioxidantes. Su efecto es suave y su absorción rápida, por lo que resulta cómoda su aplicación en diversas horas del día. El uso prolongado de esta crema, tendrá como resultado, la hidratación y nutrición profunda de las capas superiores de la epidermis. Todos los productos con los que contamos de la marca BABARIA, están probados y cuidadosamente elegidos para ofrecer el mejor resultado. Contamos con los mejores productos de la marca BABARIA."
+        "descripcion": "Puedes comprar el Cannabis Crema de Manos Nutritiva 50 ml de BABARIA al mejor precio en nuestra parafarmacia online. Si quieres conocer como Cannabis Crema de Manos Nutritiva 50 ml Babaria, puede ayudarte, aquí te explicamos como funciona y que hace. Este producto cuenta con una delicada fórmula, cuidadosamente diseñada para brindar el mejor cuidado a las pieles más sensibles. Tiene como ingrediente principal el aceite de cannabis que es rico en ácidos grasos esenciales, vitaminas, aminoácidos y antioxidantes. Su efecto es suave y su absorción rápida, por lo que resulta cómoda su aplicación en diversas horas del día. El uso prolongado de esta crema, tendrá como resultado manos más hidratadas, nutridas y suaves. Es un producto vegano, no testado en animales y con ingredientes de origen natural."
     },
     {
         "id": 18,
         "categoria": {
-            "nombre": "cuidado",
-            "id": "cuidado"
+            "nombre": "Cuidado natural",
+            "id": "cuidado",
+            "id2": "Ham-cuidado"
         },
-        "nombre": "Bálsamo labial regenerador",
-        "precio": 4.93,
-        "imagen": "/img/25.png",
-        "otrafoto": "/img/balsamo_labial-removebg-preview.png",
-        "descripcion": "Su fórmula especial lubrica suavemente los labios, formando una capa protectora y brillante sobre la piel, protegiendo contra factores externos. La manteca de karité hidrata y nutre intensamente, previene el agrietamiento y la sequedad, mejora la elasticidad de la piel. El aceite de cannabis proporciona cuidado y protección adicionales, suaviza y alisa perfectamente, restaura la suavidad y la suavidad natural. El aceite de linaza alivia rápidamente la irritación, alivia la inflamación y previene la descamación de la piel. El bálsamo labial mantiene los labios saludables, aterciopelados y sedosos durante mucho tiempo. Ideal para uso diario."
+        "nombre": "Cannabis Crema de Ducha",
+        "precio": 4.90,
+        "imagen": "/img/15.png",
+        "otrafoto": "/img/cremaduchacannabis.jpg",
+        "descripcion": "Crema de ducha enriquecida con aceite de cáñamo y argán, apta para la higiene diaria de todo tipo de pieles, especialmente indicada para pieles sensibles, secas y deshidratadas. El aceite de cáñamo es reconocido por sus propiedades hidratantes, emolientes, antioxidantes y regeneradoras, que ayudan a mejorar la elasticidad y suavidad de la piel. El aceite de argán nutre, hidrata y revitaliza la piel, previene el envejecimiento prematuro y le aporta un aspecto luminoso y saludable. Formulado sin parabenos, siliconas ni colorantes artificiales."
     },
     {
         "id": 19,
         "categoria": {
-            "nombre": "cuidado",
-            "id": "cuidado"
+            "nombre": "Cuidado natural",
+            "id": "cuidado",
+            "id2": "Ham-cuidado"
         },
-        "nombre": "Champú para Pelo Normal",
-        "precio": 14.20,
-        "imagen": "/img/24.png",
-        "otrafoto": "/img/champu-cannabis-removebg-preview.png",
-        "descripcion": "Con CBD: este champú contiene cannabidiol (CBD), un compuesto no psicoactivo derivado del cáñamo. El CBD es conocido por sus propiedades calmantes y equilibrantes. Proporciona un cuidado suave y restaurador para el cabello normal y fino. Restaura el equilibrio del cuero cabelludo y el cabello, dejando el cabello limpio y fresco. El champú para cabello normal no contiene sulfatos ni siliconas. No contiene parabenos ni colorantes artificiales. El champú para cabello normal es apto para uso diario. Para obtener los mejores resultados, úsalo junto con otros productos de la línea de cáñamo."
+        "nombre": "Cannabis Serum Facial",
+        "precio": 18.50,
+        "imagen": "/img/14.png",
+        "otrafoto": "/img/serumfacialcannabis.webp",
+        "descripcion": "¿Cansado de usar cremas faciales sin ver resultados? Olvídate de ellas y dale una oportunidad a los serums faciales de Natura Premium. Los serums faciales son muy efectivos, ya que contienen una alta concentración de principios activos que penetran en las capas más profundas de la piel, consiguiendo resultados visibles en menos tiempo. Además, los serums faciales no son nada grasos y se absorben rápidamente, por lo que son ideales para todo tipo de pieles, incluso para las pieles más grasas. El Serum Facial de Natura Premium es el aliado perfecto para combatir los signos de la edad y mantener una piel joven y radiante. Está formulado con Aceite de Cáñamo, un ingrediente 100% natural con propiedades antioxidantes, regeneradoras e hidratantes, que previene el envejecimiento prematuro de la piel y la deja suave y luminosa. Además, el Aceite de Cáñamo es rico en ácidos grasos esenciales Omega 3, 6 y 9, que nutren y fortalecen la piel desde el interior. El Serum Facial de Natura Premium también contiene Ácido Hialurónico, un potente hidratante que rellena las arrugas desde el interior y mejora la firmeza y elasticidad de la piel. Y para potenciar aún más sus efectos, hemos añadido Vitamina C, un antioxidante que protege la piel de los radicales libres y estimula la producción de colágeno, para una piel más firme y luminosa. Además, el Serum Facial de Natura Premium tiene una textura ligera y no grasa que se absorbe rápidamente, dejando la piel suave, hidratada y radiante al instante. ¡Pruébalo y luce una piel más joven y luminosa en menos tiempo!"
+    },
+    {
+        "id": 20,
+        "categoria": {
+            "nombre": "Cuidado natural",
+            "id": "cuidado",
+            "id2": "Ham-cuidado"
+        },
+        "nombre": "Cannabis Tónico Facial",
+        "precio": 15.90,
+        "imagen": "/img/13.png",
+        "otrafoto": "/img/tonicofacialcannabis.webp",
+        "descripcion": "El Tónico Facial de Natura Premium es el complemento perfecto para tu rutina de limpieza facial diaria. Formulado con Aceite de Cáñamo, un ingrediente 100% natural con propiedades antioxidantes, regeneradoras e hidratantes, que previene el envejecimiento prematuro de la piel y la deja suave y luminosa. Además, el Aceite de Cáñamo es rico en ácidos grasos esenciales Omega 3, 6 y 9, que nutren y fortalecen la piel desde el interior. El Tónico Facial de Natura Premium también contiene Agua de Rosas, un potente hidratante que refresca y tonifica la piel, dejándola suave y luminosa al instante. Y para potenciar aún más sus efectos, hemos añadido Ácido Hialurónico, un potente hidratante que rellena las arrugas desde el interior y mejora la firmeza y elasticidad de la piel. Además, el Tónico Facial de Natura Premium tiene una textura ligera y no grasa que se absorbe rápidamente, dejando la piel suave, hidratada y radiante al instante. ¡Pruébalo y luce una piel más joven y luminosa en menos tiempo!"
     }
 ]

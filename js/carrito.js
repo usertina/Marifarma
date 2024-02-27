@@ -45,7 +45,7 @@ function cargarProductosCarrito() {
                     <small>Subtotal</small>
                     <p>${producto.precio * producto.cantidad} €</p>
                 </div>
-                <button class="carrito-producto-eliminar" id="${producto.id}"><i class="fa-solid fa-trash"></i></button>        
+                <button class="carrito-producto-eliminar" id="${producto.id}"><i class="fa-solid fa-trash elemento-carrito"></i></button>        
             `;
             contenedorCarritoProductos.append(div);
     
@@ -88,14 +88,32 @@ function actualizarBotonesEliminar() {
     });
 };
 
+
+/* const elementosCarrito = document.querySelectorAll(".elemento-carrito");
+
+elementosCarrito.forEach(elemento => {
+    elemento.addEventListener("click", () =>{
+        const idProducto = elemento.dataset.idProducto;
+
+        eliminarDelCarrito(idProducto);
+    });
+}); */
+
+
+
 function eliminarDelCarrito(e) {
+    
     const idBoton = e.currentTarget.id;
-/*     console.log(idBoton); */
+    console.log(idBoton);
+
+    
 
     const index = productosEnCarritoCompra.findIndex(producto => producto.id === idBoton);
 
+    
     /* console.log(productosEnCarritoCompra); */
     productosEnCarritoCompra.splice(index, 1);
+    localStorage.setItem("productos-en-carrito", JSON.stringify(productosEnCarritoCompra));
     cargarProductosCarrito();
     /* console.log(productosEnCarritoCompra); */
 }
