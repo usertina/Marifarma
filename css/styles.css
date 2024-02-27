@@ -677,6 +677,7 @@ footer {
 /* ............................... */
 /* ............chechout............*/
 /* ............................... */
+
 .checkout-contenedor{
     margin: 2rem;
     display: flex;
@@ -929,6 +930,17 @@ footer {
     .nav.visible {
 /*         opacity: 1; */
         visibility: visible;
+    }
+
+    .checkout-contenedor{
+        margin: 0rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .NPq {
+        min-width: 20rem;
     }
 
 }
