@@ -246,7 +246,7 @@ function cargarProductos(productosElegidos) {
             <h3 class="producto-titulo" >${producto.nombre}</h3>
             <p class="producto-precio">${producto.precio}</p>
             <div class="producto-puntuacion"><i id="cannabito" class="fa-solid fa-cannabis"></i><i id="cannabito" class="fa-solid fa-cannabis"></i><i id="cannabito" class="fa-solid fa-cannabis"></i><i id="cannabito" class="fa-solid fa-cannabis"></i><i id="cannabito" class="fa-solid fa-cannabis"></i></div>
-            <button class="producto-agregar" id="${producto.id}">Añadir</button>
+            <button class="producto-agregar" id="${producto.id}"> <span data-i18n="Añadir">Añadir</span></button>
         </div>
         `;
         contenedorProductos.append(div);
