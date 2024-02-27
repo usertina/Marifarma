@@ -34,8 +34,14 @@
     "ResumenPedido": "Resumen del pedido",
     "Subtotal": "Subtotal",
     "GastosEnvio": "Gastos de envío",
-    "Total": "Total",
     "RevisarCarrito": "Revisar carrito",
     "Continuar": "Continuar",
-    "CompraRealizada": "Compra realizada, ¡muchas gracias!"
+    "CompraRealizada": "Compra realizada, ¡muchas gracias!",
+    "Seguir_comprando": "Seguir comprando",
+    "Carrito": "Carrito",
+    "Tu_carrito_tiene_hambre": "Tu carrito tiene hambre",
+    "Vaciar_Carrito": "Vaciar carrito",
+    "Total": "Total",
+    "Pagar_Ahora": "Pagar ahora",
+    "Muchas_Gracias": "Muchas gracias por la compra, disfruta de tu cuidado natural"
 }

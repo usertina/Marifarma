@@ -34,8 +34,14 @@
     "ResumenPedido": "Order Summary",
     "Subtotal": "Subtotal",
     "GastosEnvio": "Shipping Costs",
-    "Total": "Total",
     "RevisarCarrito": "Review Cart",
     "Continuar": "Continue",
-    "CompraRealizada": "Purchase completed, thank you!"
+    "CompraRealizada": "Purchase completed, thank you!",
+    "Seguir_comprando": "Continue Shopping",
+    "Carrito": "Cart",
+    "Tu_carrito_tiene_hambre": "Your cart is hungry",
+    "Vaciar_Carrito": "Empty Cart",
+    "Total": "Total",
+    "Pagar_Ahora": "Pay Now",
+    "Muchas_Gracias": "Thank you very much for your purchase, enjoy your natural care"
 }
