@@ -5,7 +5,7 @@ let productos = [
             nombre:"Medicamentos",
             id:"medicamentos",
             id2:"Ham-medicamentos"},
-        nombre: 'Aceite de cannabis CBD 25%',
+        nombre: 'Aceite de cannabis CBD',
         precio: 15.61,
         imagen: "/img/27.png",
         otrafoto: '/img/aceite-cannabis.jpg.webp',
@@ -337,6 +337,8 @@ function agregarAlCarrito(e) {
         const index = productosEnCarrito.findIndex(producto => producto.id.toString() === idBoton);//esto nos devuelve al segundo click el indice del array(la posicion en la que estña el producto)
         /* console.log(index); */
         productosEnCarrito[index].cantidad++;
+
+        alert("El producto ha sido agregado al carrito");
 
     }else{
         productoAgregado.cantidad = 1;

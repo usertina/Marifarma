@@ -325,6 +325,7 @@ i {
 }
 
 .contenedor-productos {
+    position: relative;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -412,42 +413,47 @@ i {
 }
 
 /* ............................... */
+/* .......producto detalle.........*/
+/* ............................... */
+
+.contenedor-producto-detalle {
+    display: flex;
+    flex-direction: row;
+    margin: 2rem;
+}
+
+.producto-detalle-carta{
+    display: flex;
+    flex-direction: column;
+    min-width: 20rem;
+    height: 25rem;
+    margin: 2rem;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0rem 0rem 1rem 0.25rem var(--amarillo);
+    border-radius: 0.8rem;
+    position: relative;
+    transition: 300ms ease;
+}
+
+
+.producto-detalle-carta:hover {
+    background-color: var(--verdeclaro);
+    box-shadow: 0rem 0rem 1rem 0.35rem var(--amarillo);
+}
+.titulo-producto {
+    font-size: xx-large;
+    color: var(--verdeocuro);
+    margin: 1rem;
+}
+/* ............................... */
 /* ........modal productos.........*/
 /* ............................... */
 
-.modal-productos-index {
-    display: none; /* Por defecto, oculto */
-    position: fixed; /* Se coloca encima de todo */
-    z-index: 1; /* Por encima de otros elementos */
-    left: 0;
-    top: 0;
-    width: 100%; /* Tamaño completo de la pantalla */
-    height: 100%;
-    overflow: auto; /* Para permitir desplazamiento si es necesario */
-    background-color: rgba(0,0,0,0.5); /* Fondo oscuro semitransparente */
-  }
-  
-  .modal-contenido-productos-index {
-    background-color: #fefefe; /* Color de fondo del modal */
-    margin: 15% auto; /* Margen superior e inferior para centrar verticalmente */
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%; /* Ancho del modal */
-  }
-  
-  .cerrar-productos-index {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-  }
-  
-  .cerrar-productos-index:hover,
-  .cerrar-productos-index:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
-  }
+/* Estilo para el modal */
+
+
+
 
 /* ............................... */
 /* ............carrito.............*/
