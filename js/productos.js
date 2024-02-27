@@ -218,6 +218,8 @@ let productos = [
 
 ];
 
+
+
 const contenedorProductos = document.querySelector("#contenedor-productos");
 const botonesCategorias = document.querySelectorAll(".boton-categoria");
 const tituloPrincipal = document.querySelector("#titulo-principal");
@@ -255,7 +257,7 @@ function cargarProductos(productosElegidos) {
 
 cargarProductos(productos);
 
-
+/* este es un filtro para las categorias */
 botonesCategorias.forEach(boton => {
     boton.addEventListener("click", (e) => {
 
@@ -280,6 +282,7 @@ botonesCategorias.forEach(boton => {
     });
 })
 
+/* este es un filtro para las categorias desde el menú de hamburguesa */
 botonesHamburguesa.forEach(botonH => {
     botonH.addEventListener("click", (e) => {
 
@@ -323,7 +326,7 @@ if(productosEnCarritoLS) {
     productosEnCarrito = [];
 }
 
-
+/* para añadir productos al carrito */
 function agregarAlCarrito(e) {
 
     const idBoton = e.currentTarget.id;

@@ -119,7 +119,8 @@ botonComprar.addEventListener("click", comparCarrito);
 
 function comparCarrito() {
 
-contenedorCarritoVacio.classList.add("disabled");contenedorCarritoProductos.classList.add("disabled");
+contenedorCarritoVacio.classList.add("disabled");
+contenedorCarritoProductos.classList.add("disabled");
 contenedorCarritoAcciones.classList.add("disabled");
 contenedorCarritoComprado.classList.remove("disabled");
 
