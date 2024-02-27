@@ -45,5 +45,14 @@
     "Pagar_Ahora": "Pay Now",
     "Muchas_Gracias": "Thank you very much for your purchase, enjoy your natural care",
     "Añadir": "Add",
-    "Crear_Cuenta": "Create account" 
+    "Crear_Cuenta": "Create account",
+    "Nombre_De_Usuario": "Username",
+    "Correo_Electronico": "E-mail",
+    "Contraseña": "Password",
+    "Confirmar_Contraseña": "Confirm password",
+    "Confirmar": "Confirm",
+    "Buscar": " Search...",
+    "Forma_De_Pago": "Payment method",
+    "Resumen_Del_Pedido": "Order Summary",
+    "Tarjeta": "Card"
 }
