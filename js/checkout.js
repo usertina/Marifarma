@@ -1,21 +1,29 @@
 
-let totalAPagar = localStorage.getItem("precioGuardado");
+let totalAPagar = parseFloat(localStorage.getItem("precioGuardado"));
 
-document.getElementById("mostrarID").textContent =  totalAPagar;
+document.getElementById("mostrarID").textContent =  `${totalAPagar} €`;
 
 let productosEnCarritoCheckout = localStorage.getItem("productos-en-carrito");
 
 productosEnCarritoCheckout = JSON.parse(productosEnCarritoCheckout);
 console.log(productosEnCarritoCheckout);
 
+
+
+
+/* function actualizarTotal() {
+    const totalCalculado = productosEnCarritoCompra.reduce((acc,producto) => acc + (producto.precio * producto.cantidad), 0);
+    total.innerText = `${totalCalculado} €`;
+} */
+
 const totalCantidad = productosEnCarritoCheckout.reduce((acc,producto) => acc + (producto.cantidad), 0);
 console.log(totalCantidad);
 
-document.getElementById("mostrarCantidad").textContent =  totalCantidad;
+document.getElementById("mostrarCantidad").textContent =  `${totalCantidad}`;
 
 /* let totalFinal = getElementById(); */
 
-document.getElementById("total-final").textContent =  totalAPagar;
+document.getElementById("total-final").textContent =  `${totalAPagar.toFixed(2)} €`;
 
 gastos();
 

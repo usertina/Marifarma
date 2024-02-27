@@ -89,18 +89,6 @@ function actualizarBotonesEliminar() {
 };
 
 
-/* const elementosCarrito = document.querySelectorAll(".elemento-carrito");
-
-elementosCarrito.forEach(elemento => {
-    elemento.addEventListener("click", () =>{
-        const idProducto = elemento.dataset.idProducto;
-
-        eliminarDelCarrito(idProducto);
-    });
-}); */
-
-
-
 function eliminarDelCarrito(e) {
     
     const idBoton = e.currentTarget.id;
@@ -130,7 +118,7 @@ function vaciarCarrito() {
 
 function actualizarTotal() {
     const totalCalculado = productosEnCarritoCompra.reduce((acc,producto) => acc + (producto.precio * producto.cantidad), 0);
-    total.innerText = `${totalCalculado} €`;
+    total.innerText = `${totalCalculado.toFixed(2)} €`;
 }
 
 botonComprar.addEventListener("click", comparCarrito);
