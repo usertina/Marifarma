@@ -36,5 +36,5 @@ function gastos() {
     } else {
         resultadoTotal = (parseFloat(valorSubtotal) + valorGastosEnvio) + "€";
     }
-    document.getElementById("total-final").textContent = resultadoTotal;
+    document.getElementById("total-final").textContent = resultadoTotal + " €";
 }
