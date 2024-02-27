@@ -34,7 +34,7 @@ function gastos() {
         document.getElementById("gastosGratis").textContent = "Gratis";
 
     } else {
-        resultadoTotal = (parseFloat(valorSubtotal) + valorGastosEnvio) + "€";
+        resultadoTotal = (parseFloat(valorSubtotal) + valorGastosEnvio);
     }
     document.getElementById("total-final").textContent = resultadoTotal + " €";
 }
