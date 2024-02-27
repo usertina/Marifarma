@@ -11,7 +11,7 @@ document.getElementById("signupForm").addEventListener("submit", function(event)
         return;
     }
 
-    if (!username  !email  !password || !confirm_password) {
+    if (!username || !email || !password || !confirm_password) {
         document.getElementById("error").innerText = "Por favor completa todos los campos";
         return;
     }
