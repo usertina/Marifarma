@@ -45,5 +45,15 @@
     "Pagar_Ahora": "Pagar ahora",
     "Muchas_Gracias": "Muchas gracias por la compra, disfruta de tu cuidado natural",
     "Añadir": "Añadir",
-    "Crear_Cuenta": "Crear Cuenta"
+    "Crear_Cuenta": "Crear Cuenta",
+    "Nombre_De_Usuario": "Nombre de usuario",
+    "Correo_Electronico": "Correo electronico",
+    "Contraseña": "Contraseña",
+    "Confirmar_Contraseña": "Confirmar contraseña",
+    "Confirmar": "Confirmar",
+    "Buscar": " Buscar...",
+    "Forma_De_Pago": "Forma de pago",
+    "Resumen_Del_Pedido": "Resumen del pedido",
+    "Tarjeta": "Tarjeta"
+
 }
