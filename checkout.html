@@ -115,7 +115,7 @@
     <!--   <form id="signup-form" action="procesar_registro.php" method="post"> -->
         <h2 class="h2Checkout NPq" data-i18n="direccionEntrega">Dirección de entrega</h2>
 
-        <label data-i18n="NoimbreApellido">Nombre y apellidos:</label>
+        <label data-i18n="NombreApellido">Nombre y apellidos:</label>
         <input type="text" id="input1" class="input-box" onkeydown="saltar(event, 'input2')">
         <label data-i18n="direccionCasa">Dirección:</label>
         <input type="text" id="input2" class="input-box" onkeydown="saltar(event, 'input3')">
@@ -193,10 +193,10 @@
     
     <section class="pedido">
         <h2 class="h2Checkout NPq" ResumenPedido>Resumen del pedido</h1>
-        <label data-i18n="Productos">Productos<span id="mostrarCantidad"></span></label>
-        <label>Subtotal</label>
-        <label data-i18n="GastosEnvio">Gastos de envio</label>
-        <label>Total <span id="mostrarID"></span></label>
+        <div class="resumen-carrito-divs"><label class="resumen-carrito" data-i18n="Productos">Productos</label><span class="resultados" id="mostrarCantidad"></span></div>
+        <div class="resumen-carrito-divs"><label class="resumen-carrito">Subtotal</label><span class="resultados" id="mostrarID"></span></div>
+        <div class="resumen-carrito-divs"><label class="resumen-carrito" data-i18n="GastosEnvio">Gastos de envio</label><span class="resultados" id="gastosGratis">5 €</span></div>
+        <div class="resumen-carrito-divs"><label class="resumen-carrito">Total</label><span class="resultados" id="total-final"></span></div>
     </section>
 
     <section class="botones">
@@ -268,6 +268,6 @@
 <script src="/js/storageTarjeta.js"></script>
 <script src="/js/checkout.js"></script>
 <script src="/js/navbar.js"></script>
-<script src="/js/carrito.js"></script>
+<!-- <script src="/js/carrito.js"></script> -->
 </body>
 </html>
