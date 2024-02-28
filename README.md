@@ -16,6 +16,13 @@ Este proyecto es un sitio web llamado MariFarma, que proporciona información y 
 - JavaScript
 - Font Awesome (para iconos)
 - i18next (para internacionalización)
+- Figma
+- Trello
+- Visual studio code
+- linux
+- Git
+- Github
+- SCRUM
 
 ## Funcionalidades
 1. Menú de Navegación
@@ -23,7 +30,7 @@ Este proyecto es un sitio web llamado MariFarma, que proporciona información y 
    - Incluye opciones para Productos, Medicamentos, Cuidado Natural, Hierbas, Ortopedia y Contacto.
 
 2. Selección de Idioma
-   - Permite a los usuarios cambiar entre los idiomas inglés y español.
+   - Permite a los usuarios cambiar entre los idiomas inglés y castellano.
    - Implementado utilizando JavaScript y la biblioteca i18next.
 
 3. Listado de Productos
@@ -59,7 +66,7 @@ En esta sección del sitio web, los usuarios pueden completar el proceso de chec
 
 - **Modo de Envío:** Los usuarios pueden seleccionar entre diferentes modos de envío, como Recogida en tienda, Envío 24h, y Envío 48h/72h. Al seleccionar una opción, se pueden realizar acciones adicionales según la elección.
 
-- **Formulario de Dirección de Entrega:** Se presenta un formulario donde los usuarios deben ingresar su nombre, dirección, código postal, ciudad, provincia y país para la entrega de los productos. Además, hay un botón para guardar los datos ingresados.
+- **Formulario de Dirección de Entrega:** Se presenta un formulario donde los usuarios deben ingresar su nombre, dirección, código postal, ciudad, provincia y país para la entrega de los productos. Además, hay un botón para guardar los datos ingresados en el localstorage.
 
 - **Forma de Pago:** Se ofrecen varias opciones de pago, incluyendo Tarjeta, Contrareembolso, PayPal y Transferencia. Para algunas opciones como Tarjeta y Transferencia, se presentan ventanas modales para ingresar detalles adicionales.
 
@@ -96,7 +103,7 @@ Para utilizar el sitio web, sigue estos pasos:
 1. Clona este repositorio en tu máquina local utilizando el siguiente comando:
 
 ...
-git clone https://github.com/A-Goffard/Marifarma.git
+$ git clone https://github.com/A-Goffard/Marifarma.git
 ...
 
 2. Abre el archivo `index.html` en tu navegador web preferido.
@@ -122,4 +129,12 @@ git clone https://github.com/A-Goffard/Marifarma.git
 Este proyecto está disponible bajo la [Licencia MIT](LICENSE), que es una licencia permisiva que permite el uso, la copia, la modificación, la fusión, la publicación, la distribución, la sublicencia y/o la venta de copias del software, y permite que las personas a las que se les entregue el software lo hagan bajo los siguientes términos:
 
 El aviso de copyright anterior y este aviso de permiso se incluirán en todas las copias o partes sustanciales del software.
+
+## Equipo
+
+* **Oussama Brahni (SCRUM Master)**  
+* **Aintzane Goffard (Product Owner)**  
+* **Tina Calleja (Software Developer)**  
+* **Johan Sebastian Rodríguez  (Software Developer)**  
+* **Abderrahmane Hichou (Software Developer)** 
 
