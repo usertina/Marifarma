@@ -122,28 +122,20 @@ El aviso de copyright anterior y este aviso de permiso se incluirán en todas la
 
 ## Equipo
 
-* * **Oussama Brahni(SCRUM Master)**
-    
-   [LinkedIn](https://www.linkedin.com/in/oussama-brahmi-b1551a280/)
-  [Github]
+* **Oussama Brahni(SCRUM Master)** [![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-blue?style=flat-square&logo=linkedin)](https://www.linkedin.com/in/oussama-brahmi-b1551a280/) [![GitHub](https://img.shields.io/badge/GitHub-Profile-black?style=flat-square&logo=github)](https://github.com/TuNombreDeUsuario)
+
+* [![GitHub](https://img.shields.io/badge/GitHub-Profile-red?style=flat-square&logo=github)](https://github.com/TuNombreDeUsuario)
+
+* [![GitHub](https://img.shields.io/badge/GitHub-Profile-red?style=flat-square&logo=github&logoColor=green)](https://github.com/TuNombreDeUsuario)
+
+
+
  
-* **Aintzane Goffard (Product Owner)**
-   [LinkedIn](https://www.linkedin.com/in/aintzane-goffard-sevillano/)
-
-  [Github](https://github.com/A-Goffard)
+* **Aintzane Goffard (Product Owner)** [LinkedIn](https://www.linkedin.com/in/aintzane-goffard-sevillano/)  [@A-Goffard](https://github.com/A-Goffard)
   
-* **Tina Calleja (Software Developer)**
+* **Tina Calleja (Software Developer)** [LinkedIn](www.linkedin.com/in/tina-calleja-91a07460/)  [Github](https://github.com/usertina)
   
-   [LinkedIn](www.linkedin.com/in/tina-calleja-91a07460/)
-
-  [Github](https://github.com/usertina)
+* **Johan Sebastian Rodríguez  (Software Developer)** [LinkedIn](https://www.linkedin.com/in/johan-sebastian-rodriguez-g/)  [Github]
   
-* **Johan Sebastian Rodríguez  (Software Developer)**
-    [LinkedIn](https://www.linkedin.com/in/johan-sebastian-rodriguez-g/)
-  [Github]
-  
-* **Abderrahmane Hichou (Software Developer)**
-  
-  [LinkedIn](https://www.linkedin.com/in/abderrahmane-hichou-95818a2ab/)
-  [Github]
+* **Abderrahmane Hichou (Software Developer)** [LinkedIn](https://www.linkedin.com/in/abderrahmane-hichou-95818a2ab/)  [Github]
 
