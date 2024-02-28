@@ -122,13 +122,13 @@ El aviso de copyright anterior y este aviso de permiso se incluirán en todas la
 
 ## Equipo
 
-* **Oussama Brahni(SCRUM Master)** [![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-blue?style=flat-square&logo=linkedin&logoColor=blue)](https://www.linkedin.com/in/oussama-brahmi-b1551a280/) [![GitHub](https://img.shields.io/badge/GitHub-Profile-black?style=flat-square&logo=github)](https://github.com/oussama2505)
+* **Oussama Brahni(SCRUM Master)** [![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-blue?style=flat-square&logo=linkedin)](https://www.linkedin.com/in/oussama-brahmi-b1551a280/) [![GitHub](https://img.shields.io/badge/GitHub-Profile-black?style=flat-square&logo=github)](https://github.com/oussama2505)
 
-* **Aintzane Goffard (Product Owner)** [![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-blue?style=flat-square&logo=linkedin&logoColor=blue)](https://www.linkedin.com/in/aintzane-goffard-sevillano/) [![GitHub](https://img.shields.io/badge/GitHub-Profile-black?style=flat-square&logo=github)](https://github.com/A-Goffard)
+* **Aintzane Goffard (Product Owner)** [![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-blue?style=flat-square&logo=linkedin)](https://www.linkedin.com/in/aintzane-goffard-sevillano/) [![GitHub](https://img.shields.io/badge/GitHub-Profile-black?style=flat-square&logo=github)](https://github.com/A-Goffard)
   
-* **Tina Calleja (Software Developer)** [![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-blue?style=flat-square&logo=linkedin&logoColor=blue)](www.linkedin.com/in/tina-calleja-91a07460/) [![GitHub](https://img.shields.io/badge/GitHub-Profile-black?style=flat-square&logo=github)](https://github.com/usertina)
+* **Tina Calleja (Software Developer)** [![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-blue?style=flat-square&logo=linkedin)](www.linkedin.com/in/tina-calleja-91a07460/) [![GitHub](https://img.shields.io/badge/GitHub-Profile-black?style=flat-square&logo=github)](https://github.com/usertina)
   
-* **Johan Sebastian Rodríguez  (Software Developer)** [![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-blue?style=flat-square&logo=linkedin&logoColor=blue)](https://www.linkedin.com/in/johan-sebastian-rodriguez-g/) [![GitHub](https://img.shields.io/badge/GitHub-Profile-black?style=flat-square&logo=github)](https://github.com/johanrodriguez24)
+* **Johan Sebastian Rodríguez  (Software Developer)** [![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-blue?style=flat-square&logo=linkedin)](https://www.linkedin.com/in/johan-sebastian-rodriguez-g/) [![GitHub](https://img.shields.io/badge/GitHub-Profile-black?style=flat-square&logo=github)](https://github.com/johanrodriguez24)
   
-* **Abderrahmane Hichou (Software Developer)** [![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-blue?style=flat-square&logo=linkedin&logoColor=blue)](https://www.linkedin.com/in/abderrahmane-hichou-95818a2ab/) [![GitHub](https://img.shields.io/badge/GitHub-Profile-black?style=flat-square&logo=github)](https://github.com/abderrahmanehichou)
+* **Abderrahmane Hichou (Software Developer)** [![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-blue?style=flat-square&logo=linkedin)](https://www.linkedin.com/in/abderrahmane-hichou-95818a2ab/) [![GitHub](https://img.shields.io/badge/GitHub-Profile-black?style=flat-square&logo=github)](https://github.com/abderrahmanehichou)
 
