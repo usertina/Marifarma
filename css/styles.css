@@ -331,6 +331,8 @@ i {
     justify-content: center;
 } 
 
+
+
 .producto {
     display: flex;
     flex-direction: column;
@@ -392,6 +394,23 @@ i {
     box-shadow: 0rem 0rem 1rem 0.2rem var(--amarillo);
 }
 
+.mas-info {
+    background-color: var(--naranja);
+    border-radius: 0.8rem;
+    color: var(--black);
+    width: 45%;
+    height: 2.5rem;
+    margin: 1rem;
+    cursor: pointer;
+    border: solid 0.15rem var(--verdeoscurillo);
+    transition: 200ms ease;
+}
+
+.mas-info:hover {
+    background-color: var(--amarillo);
+    box-shadow: 0rem 0rem 1rem 0.2rem var(--amarillo);
+}
+
 #favorite-regular {
     color: var(--verdeocuro);
     position: absolute;
@@ -446,6 +465,7 @@ i {
     color: var(--verdeocuro);
     margin: 1rem;
 }
+
 /* ............................... */
 /* ........modal productos.........*/
 /* ............................... */
@@ -911,6 +931,8 @@ footer {
     .div-descripcion {
         width: 85%;
     }
+
+
 
 }
 

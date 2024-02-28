@@ -245,6 +245,7 @@ function cargarProductos(productosElegidos) {
             <p class="producto-precio">${producto.precio}</p>
             <div class="producto-puntuacion"><i id="cannabito" class="fa-solid fa-cannabis"></i><i id="cannabito" class="fa-solid fa-cannabis"></i><i id="cannabito" class="fa-solid fa-cannabis"></i><i id="cannabito" class="fa-solid fa-cannabis"></i><i id="cannabito" class="fa-solid fa-cannabis"></i></div>
             <button class="producto-agregar" id="${producto.id}"> <span data-i18n="Añadir">Añadir</span></button>
+            <button class="mas-info botonDetalle" id="mas-info"> <span>Más info</span></button>
         </div>
         `;
         contenedorProductos.append(div);
@@ -343,6 +344,8 @@ function agregarAlCarrito(e) {
     }else{
         productoAgregado.cantidad = 1;
     productosEnCarrito.push(productoAgregado);
+
+        alert("El producto ha sido agregado al carrito");
     }
 //aquí ya nos dice para el array y cada producto, la cantidad que hay de cada uno
     /* console.log(productosEnCarrito); */
@@ -355,4 +358,12 @@ function agregarAlCarrito(e) {
 function actualizarNumerito() {
     let nuevoNumerito = productosEnCarrito.reduce((acc, producto) => acc + producto.cantidad, 0);
     numerito.innerHTML = nuevoNumerito;
+}
+
+const botonesDetalle = document.querySelectorAll(".botonDetalle");
+botonesDetalle.forEach((boton) => {
+    boton.addEventListener('click', productoDetalleEjemplo);
+});
+function productoDetalleEjemplo() {
+    window.location.href = "/producto.html";
 }
