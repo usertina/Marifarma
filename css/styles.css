@@ -659,18 +659,26 @@ small {
 /* ............................... */
 /* ............Accesso...........*/
 /* ............................... */
-
-.acceso-container{
+.sectionCrear,
+.acceso-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin: 3rem;
     
-
 }
 
-.formulario-acceso {
+#signupForm{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: var(--verdeclarosintransp);
+    padding: 1rem;
+    border-radius: 0.8rem;
+}
+
+#loginForm {
     margin: 1rem;
     background-color:var(--verdeclarosintransp);
     width: 20rem;
@@ -690,25 +698,7 @@ small {
     height: 2rem;
 }
 
-.texto h1 h2{
-    margin-bottom: 1rem;
-    font-family: 'Comfortaa', sans-serif; 
-    margin-left: 3rem;
-    font-size: 2rem;
-
-    
- 
-}
   
-  .texto h6 {
-    text-align: center;
-    color: gray;
-    font-family: 'Comfortaa', sans-serif;
-    width: 15rem;
-    margin-bottom: 1rem;
-    margin-left: 2rem;
-
-  }
   
   .buttonAcceso {
     background-color: #E5B50E;
@@ -725,6 +715,12 @@ small {
     box-shadow: 0rem 0rem 1rem 0.2rem var(--amarillo);
 
   }
+
+  .lickcrearcuenta {
+    color: var(--verdeoscurillo);
+  }
+
+
 /* ............................... */
 /* ..............footer ...........*/
 /* ............................... */
