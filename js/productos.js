@@ -5,7 +5,7 @@ let productos = [
             nombre:"Medicamentos",
             id:"medicamentos",
             id2:"Ham-medicamentos"},
-        nombre: 'Aceite de cannabis CBD 25%',
+        nombre: 'Aceite de cannabis CBD',
         precio: 15.61,
         imagen: "/img/27.png",
         otrafoto: '/img/aceite-cannabis.jpg.webp',
@@ -218,8 +218,6 @@ let productos = [
 
 ];
 
-
-
 const contenedorProductos = document.querySelector("#contenedor-productos");
 const botonesCategorias = document.querySelectorAll(".boton-categoria");
 const tituloPrincipal = document.querySelector("#titulo-principal");
@@ -247,6 +245,7 @@ function cargarProductos(productosElegidos) {
             <p class="producto-precio">${producto.precio}</p>
             <div class="producto-puntuacion"><i id="cannabito" class="fa-solid fa-cannabis"></i><i id="cannabito" class="fa-solid fa-cannabis"></i><i id="cannabito" class="fa-solid fa-cannabis"></i><i id="cannabito" class="fa-solid fa-cannabis"></i><i id="cannabito" class="fa-solid fa-cannabis"></i></div>
             <button class="producto-agregar" id="${producto.id}"> <span data-i18n="Añadir">Añadir</span></button>
+            <button class="mas-info botonDetalle" id="mas-info"> <span>Más info</span></button>
         </div>
         `;
         contenedorProductos.append(div);
@@ -340,12 +339,15 @@ function agregarAlCarrito(e) {
         /* console.log(index); */
         productosEnCarrito[index].cantidad++;
 
+        alert("El producto ha sido agregado al carrito");
+
     }else{
         productoAgregado.cantidad = 1;
     productosEnCarrito.push(productoAgregado);
+
+        alert("El producto ha sido agregado al carrito");
     }
 //aquí ya nos dice para el array y cada producto, la cantidad que hay de cada uno
-    /* console.log(productosEnCarrito); */
 
     actualizarNumerito();//actualiza el numero del carrito cada vez que agregamos un producto
     localStorage.setItem("productos-en-carrito", JSON.stringify(productosEnCarrito));//esto hace que guarde un json con los peroductos que están en el carrito en el local storage
@@ -355,4 +357,12 @@ function agregarAlCarrito(e) {
 function actualizarNumerito() {
     let nuevoNumerito = productosEnCarrito.reduce((acc, producto) => acc + producto.cantidad, 0);
     numerito.innerHTML = nuevoNumerito;
+}
+
+const botonesDetalle = document.querySelectorAll(".botonDetalle");
+botonesDetalle.forEach((boton) => {
+    boton.addEventListener('click', productoDetalleEjemplo);
+});
+function productoDetalleEjemplo() {
+    window.location.href = "/producto.html";
 }

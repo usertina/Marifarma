@@ -1,21 +1,22 @@
 
-let totalAPagar = localStorage.getItem("precioGuardado");
+let totalAPagar = parseFloat(localStorage.getItem("precioGuardado"));
 
-document.getElementById("mostrarID").textContent =  totalAPagar;
+document.getElementById("mostrarID").textContent =  `${totalAPagar} €`;
 
 let productosEnCarritoCheckout = localStorage.getItem("productos-en-carrito");
 
 productosEnCarritoCheckout = JSON.parse(productosEnCarritoCheckout);
 console.log(productosEnCarritoCheckout);
 
+
 const totalCantidad = productosEnCarritoCheckout.reduce((acc,producto) => acc + (producto.cantidad), 0);
 console.log(totalCantidad);
 
-document.getElementById("mostrarCantidad").textContent =  totalCantidad;
+document.getElementById("mostrarCantidad").textContent =  `${totalCantidad}`;
 
 /* let totalFinal = getElementById(); */
 
-document.getElementById("total-final").textContent =  totalAPagar;
+document.getElementById("total-final").textContent =  `${totalAPagar.toFixed(2)} €`;
 
 gastos();
 
@@ -34,7 +35,8 @@ function gastos() {
         document.getElementById("gastosGratis").textContent = "Gratis";
 
     } else {
-        resultadoTotal = (parseFloat(valorSubtotal) + valorGastosEnvio) + "€";
+        resultadoTotal = (parseFloat(valorSubtotal) + valorGastosEnvio);
     }
-    document.getElementById("total-final").textContent = resultadoTotal;
+    document.getElementById("total-final").textContent = resultadoTotal + " €";
 }
+

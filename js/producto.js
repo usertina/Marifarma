@@ -1,10 +1,13 @@
-let productos = [
+/* Ahora no está terminado */
+
+/* productos = [
     {
         id: 1,
         categoria: {
             nombre:"Medicamentos",
-            id:"medicamentos"},
-        nombre: 'Aceite de cannabis CBD 25%',
+            id:"medicamentos",
+            id2:"Ham-medicamentos"},
+        nombre: 'Aceite de cannabis CBD',
         precio: 15.61,
         imagen: "/img/27.png",
         otrafoto: '/img/aceite-cannabis.jpg.webp',
@@ -14,7 +17,8 @@ let productos = [
         id: 2,
         categoria: {
             nombre:"Herbolario",
-            id:"herbolario"},
+            id:"herbolario",
+            id2:"Ham-herbolario"},
         nombre: 'AMNESIA CBD BOOST',
         precio: 10.75,
         imagen: "/img/8.png",
@@ -25,7 +29,8 @@ let productos = [
         id: 3,
         categoria: {
             nombre:"Medicamentos",
-            id:"medicamentos"},
+            id:"medicamentos",
+            id2:"Ham-medicamentos"},
         nombre: 'WELCOME WINTER KIT',
         precio: 50.00,
         imagen: "/img/1.png",
@@ -36,7 +41,8 @@ let productos = [
         id: 4,
         categoria: {
             nombre:"Medicamentos",
-            id:"medicamentos"},
+            id:"medicamentos",
+            id2:"Ham-medicamentos"},
         nombre: 'SHATTER CBD LEMON',
         precio: 4.50,
         imagen: "/img/3.png",
@@ -47,7 +53,8 @@ let productos = [
         id: 5,
         categoria: {
             nombre:"Medicamentos",
-            id:"medicamentos"},
+            id:"medicamentos",
+            id2:"Ham-medicamentos",},
         nombre: 'CESAMET',
         precio: 17.17,
         imagen: "/img/7.png",
@@ -58,7 +65,8 @@ let productos = [
         id: 6,
         categoria: {
             nombre:"Medicamentos",
-            id:"medicamentos"},
+            id:"medicamentos",
+            id2:"Ham-medicamentos"},
         nombre: 'Cannabidol Oral',
         precio: 19.60,
         imagen: "/img/20.png",
@@ -69,7 +77,8 @@ let productos = [
         id: 7,
         categoria: {
             nombre:"Herbolario",
-            id:"herbolario"},
+            id:"herbolario",
+            id2:"Ham-herbolario"},
         nombre: 'Flores Secas de Lavanda',
         precio: 11.99,
         imagen: "/img/12.png",
@@ -80,7 +89,8 @@ let productos = [
         id: 8,
         categoria: {
             nombre:"Herbolario",
-            id:"herbolario"},
+            id:"herbolario",
+            id2:"Ham-herbolario"},
         nombre: 'Raíz de Valeriana Eco',
         precio: 7.90,
         imagen: "/img/4.png",
@@ -91,7 +101,8 @@ let productos = [
         id: 9,
         categoria: {
             nombre:"Herbolario",
-            id:"herbolario"},
+            id:"herbolario",
+            id2:"Ham-herbolario"},
         nombre: 'Manzanilla Amarga Flor',
         precio: 2.50,
         imagen: "/img/10.png",
@@ -102,7 +113,8 @@ let productos = [
         id: 11,
         categoria: {
             nombre:"Ortopedia",
-            id:"ortopedia"},
+            id:"ortopedia",
+            id2:"Ham-ortopedia"},
         nombre: 'Cojines con espelta',
         precio: 3.19,
         imagen: "/img/18.png",
@@ -113,7 +125,8 @@ let productos = [
         id: 12,
         categoria: {
             nombre:"Ortopedia",
-            id:"ortopedia"},
+            id:"ortopedia",
+            id2:"Ham-ortopedia"},
         nombre: 'Cojín Cuadrado en Yute',
         precio: 16.95,
         imagen: "/img/19.png",
@@ -124,7 +137,8 @@ let productos = [
         id: 13,
         categoria: {
             nombre:"Ortopedia",
-            id:"ortopedia"},
+            id:"ortopedia",
+            id2:"Ham-ortopedia"},
         nombre: 'Bastón caña de bambú',
         precio: 24.00,
         imagen: "/img/22.png",
@@ -135,7 +149,8 @@ let productos = [
         id: 14,
         categoria: {
             nombre:"Ortopedia",
-            id:"ortopedia"},
+            id:"ortopedia",
+            id2:"Ham-ortopedia"},
         nombre: 'Calcetín de Bambú',
         precio: 14.99,
         imagen: "/img/21.png",
@@ -146,7 +161,8 @@ let productos = [
         id: 15,
         categoria: {
             nombre:"Cuidado natural",
-            id:"cuidado"},
+            id:"cuidado",
+            id2:"Ham-cuidado"},
         nombre: 'Cannabis Crema De Dia',
         precio: 17.00,
         imagen: "/img/17.png",
@@ -157,7 +173,8 @@ let productos = [
         id: 16,
         categoria: {
             nombre:"Cuidado natural",
-            id:"cuidado"},
+            id:"cuidado",
+            id2:"Ham-cuidado"},
         nombre: 'Bálsamo de cannabis con CBD',
         precio: 14.50,
         imagen: "/img/23.png",
@@ -168,7 +185,8 @@ let productos = [
         id: 17,
         categoria: {
             nombre:"Cuidado natural",
-            id:"cuidado"},
+            id:"cuidado",
+            id2:"Ham-cuidado"},
         nombre: 'Crema manos Cannabis',
         precio: 3.45,
         imagen: "/img/16.png",
@@ -179,7 +197,8 @@ let productos = [
         id: 18,
         categoria: {
             nombre:"Cuidado natural",
-            id:"cuidado"},
+            id:"cuidado",
+            id2:"Ham-cuidado"},
         nombre: 'Bálsamo labial regenerador',
         precio: 4.93,
         imagen: "/img/25.png",
@@ -190,7 +209,8 @@ let productos = [
         id: 19,
         categoria: {
             nombre:"Cuidado natural",
-            id:"cuidado"},
+            id:"cuidado",
+            id2:"Ham-cuidado"},
         nombre: 'Cannabis Lote de Regalo',
         precio: 4.93,
         imagen: "/img/11.png",
@@ -198,44 +218,71 @@ let productos = [
         descripcion: "Dermacol Cannabis, Bálsamos labiales para mujer, Todo lo necesario para una piel con aspecto bonito en un solo paquete. El lote cosmético Dermacol Cannabis es un capricho que te encantará o un regalo magnífico para tus seres queridos. Contenido del lote: mascarilla facial desintoxicante con arcilla 100 ml crema facial hidratante 50 ml bálsamo labial nutritivo 1 ud Características: desintoxica tiene un efecto exfoliante suave previene la formación excesiva de sebo adecuado para calmar la piel sensible e irritada productos cosméticos variados para uso diario Composición: producto vegano Modo de empleo: Sigue las instrucciones de cada producto incluido en el set de cosméticos."
     },
 
-];
+]; */
 
-const contenedorProductos = document.querySelector("#contenedor-productos");
-/* const botonesCategorias = document.querySelectorAll(".boton-categoria");
-const tituloPrincipal = document.querySelector("#titulo-principal"); */
-let botonesAgregar = document.querySelectorAll(".producto-agregar");
-const numerito = document.querySelector("#numerito");
+// Guardar la lista de productos en el local storage
+localStorage.setItem('productos', JSON.stringify(productos));
 
-const divContenedorGrande = document.createElement("div");
-div.classList.add("contenedor-grande-producto");
-div.innerHTML =`
-<h3 class="producto-titulo" >${productos.nombre}</h3>
-`
-function cargarProductos(productosElegidos) {
+// Obtén todos los botones de detalles
+const botonesDetalle = document.querySelectorAll('.botonDetalle');
 
-    contenedorProductos.innerHTML = "";//para empezar la carga desde 0
+// Itera sobre cada botón y agrega un manejador de eventos
+botonesDetalle.forEach((boton) => {
+    boton.addEventListener('click', mostrarDetalleProducto);
+});
 
-    productosElegidos.forEach(producto => {
-        
-        const div = document.createElement("div");
-        div.classList.add("producto");
-        div.innerHTML = `
-        <button class="favorite">
-        <i class="fa-regular fa-star" id="favorite-regular" class="estrellaVacia"></i>
-        <i class="fa-solid fa-star" id="added-favorite" class="estrellaLLena"></i>
-        </button>
-        <img class="producto-imagen" src="${producto.imagen}" alt="">
-        <div class="producto-detalles">
-            <h3 class="producto-titulo" >${producto.nombre}</h3>
-            <p class="producto-precio">${producto.precio}</p>
-            <div class="producto-puntuacion"><i id="cannabito" class="fa-solid fa-cannabis"></i><i id="cannabito" class="fa-solid fa-cannabis"></i><i id="cannabito" class="fa-solid fa-cannabis"></i><i id="cannabito" class="fa-solid fa-cannabis"></i><i id="cannabito" class="fa-solid fa-cannabis"></i></div>
-            <button class="producto-agregar" id="${producto.id}">Añadir</button>
-        </div>
+// Función para mostrar los detalles del producto
+function mostrarDetalleProducto(event) {
+    // Obtén el ID del botón de detalles
+    const idBoton = event.target.id;
+
+    // Obtén el producto correspondiente al ID del botón
+    const productoSeleccionado = productos.find(producto => producto.id.toString() === idBoton);
+
+    if (productoSeleccionado) {
+        // Supongamos que tienes un contenedor para mostrar los detalles del producto
+        const contenedorDetalleProducto = document.getElementById('detalleProducto');
+
+        // Muestra los detalles del producto en el contenedor
+        contenedorDetalleProducto.innerHTML =`
+<div class="contenedor-producto-detalle">
+
+<div class="detalles-producto">
+   <h3 class="titulo-producto">Titulo producto</h3>
+   <div class="descripcion">
+       Lorem ipsum, dolor sit amet consectetur adipisicing elit. A repudiandae soluta laboriosam eos tenetur eaque quidem! Minus sapiente quaerat voluptatibus molestias aperiam, eum quibusdam vero sunt illum. Odio, porro reiciendis.
+       Nostrum optio minima obcaecati assumenda provident aperiam molestias quia placeat maxime nesciunt! Cum ratione aspernatur corrupti placeat neque minima nobis eius cumque ullam minus, quaerat, sequi magni possimus pariatur cupiditate!
+       Consequatur, expedita fugit deleniti quia exercitationem adipisci quasi alias pariatur distinctio ea? Dicta ad aspernatur voluptatum accusamus, eum non inventore natus ducimus, sit officia voluptas id tempore laboriosam itaque quo.
+       Eligendi repudiandae modi ea temporibus quo quod, ullam fugit consequuntur facilis inventore debitis quas dignissimos eum nulla qui ipsum recusandae. Molestias perspiciatis quae assumenda? Rerum non quia ea. Molestias, temporibus!
+       Nisi maiores provident unde molestiae reiciendis error expedita quo in minima, nihil excepturi quod dignissimos optio adipisci tempore placeat. Dignissimos suscipit tempore maiores? Ipsum magni animi corrupti, laborum quisquam cumque!
+       Ipsam eveniet nulla quibusdam molestias facere obcaecati sit eius nam ullam in dolorem labore reprehenderit, ipsa numquam, quos dolore suscipit voluptas, praesentium aliquid aliquam voluptatibus commodi. Molestiae vero corrupti quos?
+       Sed eum repellendus ad esse. Asperiores dolorem possimus aliquam est, veritatis, eum sed quae temporibus sunt saepe nulla, accusamus quia pariatur. Fugit sint fugiat similique dicta amet veniam distinctio asperiores.
+       Atque iste ea dolore, voluptatum repellat facere nesciunt, praesentium, nulla alias quibusdam fuga! Dolores, consectetur error. Nemo aliquid, optio, vero autem error, quos repellat nostrum aspernatur exercitationem earum nihil iusto.
+       Eaque aperiam veniam iusto a aut eveniet, fugit magni vel? Fuga blanditiis minima, dolor ipsum accusamus, cumque, aliquid maxime alias nulla mollitia ullam. Amet, porro commodi magnam expedita quaerat adipisci.
+       Ullam, adipisci ipsam nulla laudantium minima suscipit veritatis sapiente fuga? Sunt incidunt quia iusto, consectetur sit, perferendis officia pariatur nobis unde deleniti similique dolores id veniam consequatur magnam voluptas accusantium!
+   </div>
+   
+</div>
+
+<div class="producto-detalle-carta">
+   <button class="favorite">
+       <i class="fa-regular fa-star" id="favorite-regular" class="estrellaVacia"></i>
+       <i class="fa-solid fa-star" id="added-favorite" class="estrellaLLena"></i>
+   </button>
+   <img class="producto-imagen" src="img/aceite-cannabis.jpg.webp" alt="">
+   <div class="producto-detalles">
+       <h3 class="producto-titulo">Aceite de cannabis</h3>
+       <p class="producto-precio">15,61 €</p>
+       <div class="producto-puntuacion"><i id="cannabito" class="fa-solid fa-cannabis"></i><i id="cannabito" class="fa-solid fa-cannabis"></i><i id="cannabito" class="fa-solid fa-cannabis"></i><i id="cannabito" class="fa-solid fa-cannabis"></i><i id="cannabito" class="fa-solid fa-cannabis"></i></div>
+       <button class="producto-agregar" id="añadir">Añadir</button>
+   </div>
+</div>
+
+
+
+</div>
         `;
-        contenedorProductos.append(div);
-    });
-    actualizarBotonesAgregar();
-/*     console.log(botonesAgregar); */
-}
-
-cargarProductos(productos);
+    } else {
+        console.log('Producto no encontrado');
+    }
+};

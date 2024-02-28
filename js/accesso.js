@@ -1,31 +1,18 @@
-document.getElementById("signupForm").addEventListener("submit", function(event) {
+document.getElementById("loginForm").addEventListener("submit", function(event) {
     event.preventDefault();
 
     var username = document.getElementById("username").value;
-    var email = document.getElementById("email").value;
     var password = document.getElementById("password").value;
-    var confirm_password = document.getElementById("confirm_password").value;
+    var email= document.getElementById('email').value;
 
-    if (password !== confirm_password) {
-        document.getElementById("error").innerText = "Las contraseñas no coinciden";
-        return;
+    // Verificar si el usuario existe en el localStorage
+    var user = JSON.parse(localStorage.getItem(username));
+
+
+    if (user && user.password === password){
+        alert("Inicio de sesión exitoso");
+        window.location.href = "index.html"; // Redirigir a la página inicial
+    } else {
+        document.getElementById("error").innerText = "Nombre de usuario o contraseña incorrectos";
     }
-
-    if (!username || !email || !password || !confirm_password) {
-        document.getElementById("error").innerText = "Por favor completa todos los campos";
-        return;
-    }
-
-    // Crear un objeto de usuario
-    var user = {
-        username: username,
-        email: email,
-        password: password
-    };
-
-    // Guardar el usuario en el localStorage
-    localStorage.setItem(username, JSON.stringify(user));
-
-    alert("Cuenta creada exitosamente");
-    window.location.href = "index.html"; // Redirigir a la página inicial
 });

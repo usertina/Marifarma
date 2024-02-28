@@ -325,10 +325,13 @@ i {
 }
 
 .contenedor-productos {
+    position: relative;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 } 
+
+
 
 .producto {
     display: flex;
@@ -391,6 +394,23 @@ i {
     box-shadow: 0rem 0rem 1rem 0.2rem var(--amarillo);
 }
 
+.mas-info {
+    background-color: var(--naranja);
+    border-radius: 0.8rem;
+    color: var(--black);
+    width: 45%;
+    height: 2.5rem;
+    margin: 1rem;
+    cursor: pointer;
+    border: solid 0.15rem var(--verdeoscurillo);
+    transition: 200ms ease;
+}
+
+.mas-info:hover {
+    background-color: var(--amarillo);
+    box-shadow: 0rem 0rem 1rem 0.2rem var(--amarillo);
+}
+
 #favorite-regular {
     color: var(--verdeocuro);
     position: absolute;
@@ -412,42 +432,48 @@ i {
 }
 
 /* ............................... */
+/* .......producto detalle.........*/
+/* ............................... */
+
+.contenedor-producto-detalle {
+    display: flex;
+    flex-direction: row;
+    margin: 2rem;
+}
+
+.producto-detalle-carta{
+    display: flex;
+    flex-direction: column;
+    min-width: 20rem;
+    height: 25rem;
+    margin: 2rem;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0rem 0rem 1rem 0.25rem var(--amarillo);
+    border-radius: 0.8rem;
+    position: relative;
+    transition: 300ms ease;
+}
+
+
+.producto-detalle-carta:hover {
+    background-color: var(--verdeclaro);
+    box-shadow: 0rem 0rem 1rem 0.35rem var(--amarillo);
+}
+.titulo-producto {
+    font-size: xx-large;
+    color: var(--verdeocuro);
+    margin: 1rem;
+}
+
+/* ............................... */
 /* ........modal productos.........*/
 /* ............................... */
 
-.modal-productos-index {
-    display: none; /* Por defecto, oculto */
-    position: fixed; /* Se coloca encima de todo */
-    z-index: 1; /* Por encima de otros elementos */
-    left: 0;
-    top: 0;
-    width: 100%; /* Tamaño completo de la pantalla */
-    height: 100%;
-    overflow: auto; /* Para permitir desplazamiento si es necesario */
-    background-color: rgba(0,0,0,0.5); /* Fondo oscuro semitransparente */
-  }
-  
-  .modal-contenido-productos-index {
-    background-color: #fefefe; /* Color de fondo del modal */
-    margin: 15% auto; /* Margen superior e inferior para centrar verticalmente */
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%; /* Ancho del modal */
-  }
-  
-  .cerrar-productos-index {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-  }
-  
-  .cerrar-productos-index:hover,
-  .cerrar-productos-index:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
-  }
+/* Estilo para el modal */
+
+
+
 
 /* ............................... */
 /* ............carrito.............*/
@@ -633,17 +659,28 @@ small {
 /* ............................... */
 /* ............Accesso...........*/
 /* ............................... */
-
-.acceso-container{
+.sectionCrear,
+.acceso-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
+    margin: 3rem;
+    
 }
 
-.formulario-acceso {
-    background-color:#F2F2F2;
+#signupForm{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: var(--verdeclarosintransp);
+    padding: 1rem;
+    border-radius: 0.8rem;
+}
+
+#loginForm {
+    margin: 1rem;
+    background-color:var(--verdeclarosintransp);
     width: 20rem;
     display: flex;
     flex-direction: column;
@@ -651,6 +688,7 @@ small {
     align-items: center;
     height: 25rem;
     border-radius: 2rem;
+    gap: 0.5rem;
    }
 
    .formulario-acceso input{
@@ -660,25 +698,7 @@ small {
     height: 2rem;
 }
 
-.texto h1 h2{
-    margin-bottom: 1rem;
-    font-family: 'Comfortaa', sans-serif; 
-    margin-left: 3rem;
-    font-size: 2rem;
-
-    
- 
-}
   
-  .texto h6 {
-    text-align: center;
-    color: gray;
-    font-family: 'Comfortaa', sans-serif;
-    width: 15rem;
-    margin-bottom: 1rem;
-    margin-left: 2rem;
-
-  }
   
   .buttonAcceso {
     background-color: #E5B50E;
@@ -686,15 +706,21 @@ small {
     height: 2rem;
     margin-top: 3rem;
     border-radius: 0.4rem;
-    
+    font-size: large;
     
 
   }
   .buttonAcceso:hover{
-    background-color: #B0A326;
-    box-shadow: 0.5rem 0.5rem 0.5rem  var(--naranja);
+    background-color: var(--naranja);
+    box-shadow: 0rem 0rem 1rem 0.2rem var(--amarillo);
 
   }
+
+  .lickcrearcuenta {
+    color: var(--verdeoscurillo);
+  }
+
+
 /* ............................... */
 /* ..............footer ...........*/
 /* ............................... */
@@ -901,6 +927,8 @@ footer {
     .div-descripcion {
         width: 85%;
     }
+
+
 
 }
 

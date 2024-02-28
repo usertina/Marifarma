@@ -23,8 +23,6 @@ document.addEventListener("DOMContentLoaded", function() {
         // Guardar los datos del formulario en el Local Storage
         localStorage.setItem("formData", JSON.stringify({ nombre, email, password }));
 
-        // Aquí puedes agregar cualquier otra lógica de envío del formulario que necesites
-
         // Simular envío del formulario para este ejemplo
         alert("Formulario enviado correctamente");
     });
