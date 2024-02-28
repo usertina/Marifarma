@@ -90,14 +90,14 @@ function actualizarBotonesEliminar() {
 
 function eliminarDelCarrito(e) {
     const idBoton = e.currentTarget.id;
-/*     console.log(idBoton); */
+    console.log(idBoton);
 
     const index = productosEnCarritoCompra.findIndex(producto => producto.id === idBoton);
 
-    /* console.log(productosEnCarritoCompra); */
+    console.log(productosEnCarritoCompra);
     productosEnCarritoCompra.splice(index, 1);
     cargarProductosCarrito();
-    /* console.log(productosEnCarritoCompra); */
+    console.log(productosEnCarritoCompra);
 }
 
 
