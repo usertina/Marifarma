@@ -132,24 +132,28 @@ El aviso de copyright anterior y este aviso de permiso se incluirán en todas la
 
 ## Equipo
 
-* **Oussama Brahni (SCRUM Master)**
-  ...
-   https://www.linkedin.com/in/oussama-brahmi-b1551a280/
-  ...
+* * **Oussama Brahni(SCRUM Master)**
+    
+   [LinkedIn](https://www.linkedin.com/in/oussama-brahmi-b1551a280/)
+  [Github]
+ 
 * **Aintzane Goffard (Product Owner)**
-  ...
-* https://www.linkedin.com/in/aintzane-goffard-sevillano/
-  ...
+  
+  [LinkedIn](https://www.linkedin.com/in/aintzane-goffard-sevillano/)
+  [Github]
+  
 * **Tina Calleja (Software Developer)**
-  ...
-  www.linkedin.com/in/tina-calleja-91a07460/
-  ...
+  
+   [LinkedIn](www.linkedin.com/in/tina-calleja-91a07460/)
+  [Github]
+  
 * **Johan Sebastian Rodríguez  (Software Developer)**
-  ...
-  https://www.linkedin.com/in/johan-sebastian-rodriguez-g/
-  ...
+  
+   [LinkedIn](https://www.linkedin.com/in/johan-sebastian-rodriguez-g/)
+  [Github]
+  
 * **Abderrahmane Hichou (Software Developer)**
-  ...
-  https://www.linkedin.com/in/abderrahmane-hichou-95818a2ab/
-  ...
+  
+  [LinkedIn](https://www.linkedin.com/in/abderrahmane-hichou-95818a2ab/)
+  [Github]
 
