@@ -348,7 +348,6 @@ function agregarAlCarrito(e) {
         alert("El producto ha sido agregado al carrito");
     }
 //aquí ya nos dice para el array y cada producto, la cantidad que hay de cada uno
-    /* console.log(productosEnCarrito); */
 
     actualizarNumerito();//actualiza el numero del carrito cada vez que agregamos un producto
     localStorage.setItem("productos-en-carrito", JSON.stringify(productosEnCarrito));//esto hace que guarde un json con los peroductos que están en el carrito en el local storage

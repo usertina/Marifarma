@@ -1,10 +1,4 @@
-/* botonesDetalle.forEach((boton) => {
-    boton.addEventListener('click', productoDetalleEjemplo);
-});
-function productoDetalleEjemplo() {
-    window.location.href = "/producto.html";
-}
- */
+/* Ahora no está terminado */
 
 /* productos = [
     {

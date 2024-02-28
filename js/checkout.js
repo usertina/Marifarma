@@ -9,13 +9,6 @@ productosEnCarritoCheckout = JSON.parse(productosEnCarritoCheckout);
 console.log(productosEnCarritoCheckout);
 
 
-
-
-/* function actualizarTotal() {
-    const totalCalculado = productosEnCarritoCompra.reduce((acc,producto) => acc + (producto.precio * producto.cantidad), 0);
-    total.innerText = `${totalCalculado} €`;
-} */
-
 const totalCantidad = productosEnCarritoCheckout.reduce((acc,producto) => acc + (producto.cantidad), 0);
 console.log(totalCantidad);
 
@@ -46,3 +39,4 @@ function gastos() {
     }
     document.getElementById("total-final").textContent = resultadoTotal + " €";
 }
+
