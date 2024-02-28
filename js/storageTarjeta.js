@@ -1,3 +1,5 @@
+//obtiene un elemento del DOM mediante su ID 
+
 document.addEventListener('DOMContentLoaded', function() {
     const guardarDatosBtn = document.getElementById('guardarDatosT');
 

@@ -1,19 +1,19 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Get the modal
+    // obtiene el modal
     var modal = document.getElementById('firstModal');
-    // Get the radio button
+    // obtiene el boton de radio
     var radio = document.getElementById('Tarjeta');
   
-    // Add event listener to the radio button
+    // Agregar un event listener al botón de radio
     radio.addEventListener('change', function() {
         if (this.checked) {
-            modal.style.display = 'block'; // Show the modal
+            modal.style.display = 'block'; // Mostrar el modal
         } else {
-            modal.style.display = 'none'; // Hide the modal
+            modal.style.display = 'none';  // Ocultar el modal
         }
     });
   
-    // Get the close button
+    // Obtener el botón de cerrar
     var closeButton = document.querySelector('.close');
   
     // Cerrar modal cuando se da al boton
@@ -23,21 +23,21 @@ document.addEventListener('DOMContentLoaded', function() {
   });
   /////////////////////////////////////////////////////////////////////
   document.addEventListener('DOMContentLoaded', function() {
-    // Get the modal
+    // obtiene el modal
     var modal1 = document.getElementById('secondModal');
-    // Get the radio button
+    // obtiene el boton de radio
     var radio1 = document.getElementById('Transferencia');
   
-    // Add event listener to the radio button
+    // Agregar un event listener al botón de radio
     radio1.addEventListener('change', function() {
         if (this.checked) {
-            modal1.style.display = 'block'; // Show the modal
+            modal1.style.display = 'block'; // Mostrar el modal
         } else {
-            modal1.style.display = 'none'; // Hide the modal
+            modal1.style.display = 'none'; // Ocultar el modal
         }
     });
   
-    // Get the close button
+     // Obtener el botón de cerrar
     var closeButton1 = modal1.querySelector('.close');
   
   
@@ -47,10 +47,11 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
   /////////////////////////////////////////////////////////////////////
+
   document.addEventListener('DOMContentLoaded', function() {
-    var openModalBtn = document.getElementById('openModalBtn');
-    var modal = document.getElementById('terceraModal');
-    var closeButton = modal.querySelector('.close');
+    var openModalBtn = document.getElementById('openModalBtn');// Obtener el botón para abrir el modal
+    var modal = document.getElementById('terceraModal'); // Obtener el elemento modal
+    var closeButton = modal.querySelector('.close');// Obtener el botón de cierre dentro del modal
   
     // Event listener para abrir la ventana modal
     openModalBtn.addEventListener('click', function() {
