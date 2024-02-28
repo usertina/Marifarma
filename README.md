@@ -128,6 +128,7 @@ El aviso de copyright anterior y este aviso de permiso se incluirán en todas la
 
 * [![GitHub](https://img.shields.io/badge/GitHub-Profile-red?style=flat-square&logo=github&logoColor=green)](https://github.com/TuNombreDeUsuario)
 
+[![GitHub](https://img.shields.io/badge/GitHub-Profile-red?style=flat-square&logo=github&logoColor=white)](https://github.com/TuNombreDeUsuario)
 
 
  
