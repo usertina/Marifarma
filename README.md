@@ -138,18 +138,18 @@ El aviso de copyright anterior y este aviso de permiso se incluirán en todas la
   [Github]
  
 * **Aintzane Goffard (Product Owner)**
-  
-  [LinkedIn](https://www.linkedin.com/in/aintzane-goffard-sevillano/)
-  [Github]
+   [LinkedIn](https://www.linkedin.com/in/aintzane-goffard-sevillano/)
+
+  [Github](https://github.com/A-Goffard)
   
 * **Tina Calleja (Software Developer)**
   
    [LinkedIn](www.linkedin.com/in/tina-calleja-91a07460/)
-  [Github]
+
+  [Github](https://github.com/usertina)
   
 * **Johan Sebastian Rodríguez  (Software Developer)**
-  
-   [LinkedIn](https://www.linkedin.com/in/johan-sebastian-rodriguez-g/)
+    [LinkedIn](https://www.linkedin.com/in/johan-sebastian-rodriguez-g/)
   [Github]
   
 * **Abderrahmane Hichou (Software Developer)**
