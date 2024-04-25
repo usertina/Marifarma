@@ -40,7 +40,7 @@ Este proyecto es un sitio web llamado MariFarma, que proporciona información y 
    - Los filtros por categorias se pueden realizar desde la pagina principal y desde el menu hamburgesa en version movil.
 
 6. Carrito de Compras
-
+![carro](https://github.com/usertina/Marifarma/assets/124672039/346fdc91-ef04-418b-86a8-77ccb07df3bd)
 En esta sección del sitio web, los usuarios pueden revisar los productos que han agregado al carrito de compras. A continuación se detallan los elementos principales de esta parte:
 
 - **Navegación y Volver:** El usuario puede volver a la página principal haciendo clic en el botón "Seguir comprando".
@@ -52,6 +52,7 @@ En esta sección del sitio web, los usuarios pueden revisar los productos que ha
 - **Mensaje de Confirmación:** Una vez que se realiza la compra, se muestra un mensaje de agradecimiento al usuario.
 
 6. Navegación y Categorías de Productos
+![paracoders1](https://github.com/usertina/Marifarma/assets/124672039/becd4cc8-a633-46a0-9ad2-4bcc99b8bb36)
 
 En esta sección del sitio web, los usuarios pueden navegar por diferentes categorías de productos y ver los productos disponibles en cada una. A continuación se describe la estructura de esta parte:
 
@@ -60,7 +61,7 @@ En esta sección del sitio web, los usuarios pueden navegar por diferentes categ
 - **Contenido de Productos:** En esta sección principal, se muestran los productos disponibles según la categoría seleccionada. Los productos se muestran en forma de tarjetas con su nombre, precio e imagen correspondiente.
 
 7. Proceso de Checkout
-
+![checkout](https://github.com/usertina/Marifarma/assets/124672039/1280c766-4709-4671-900f-1cf6cade01d3)
 En esta sección del sitio web, los usuarios pueden completar el proceso de checkout para realizar una compra. A continuación se describe la estructura de esta parte:
 
 - **Modo de Envío:** Los usuarios pueden seleccionar entre diferentes modos de envío, como Recogida en tienda, Envío 24h, y Envío 48h/72h. Al seleccionar una opción, se pueden realizar acciones adicionales según la elección.
@@ -135,7 +136,7 @@ El aviso de copyright anterior y este aviso de permiso se incluirán en todas la
 
 * **Aintzane Goffard (Product Owner)** [![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-blue?style=flat-square&logo=linkedin)](https://www.linkedin.com/in/aintzane-goffard-sevillano/) [![GitHub](https://img.shields.io/badge/GitHub-Profile-black?style=flat-square&logo=github)](https://github.com/A-Goffard)
   
-* **Tina Calleja (Software Developer)** [![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-blue?style=flat-square&logo=linkedin)](https://www.linkedin.com/in/tina-calleja-91a07460/) [![GitHub](https://img.shields.io/badge/GitHub-Profile-black?style=flat-square&logo=github)](https://github.com/usertina)
+* **Tina Calleja (Software Developer)** [![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-blue?style=flat-square&logo=linkedin)](https://www.linkedin.com/in/tina-calleja) [![GitHub](https://img.shields.io/badge/GitHub-Profile-black?style=flat-square&logo=github)](https://github.com/usertina)
   
 * **Johan Sebastian Rodríguez  (Software Developer)** [![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-blue?style=flat-square&logo=linkedin)](https://www.linkedin.com/in/johan-sebastian-rodriguez-g/) [![GitHub](https://img.shields.io/badge/GitHub-Profile-black?style=flat-square&logo=github)](https://github.com/johanrodriguez24)
   
